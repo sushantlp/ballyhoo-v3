@@ -53,7 +53,7 @@ class App extends Component {
                     <div class="tile is-4 is-vertical">
                         <div class="tile">
                             <div className='ui fluid card image'>
-                                <img src='https://res.cloudinary.com/dp67gawk6/image/upload/c_scale,w_1300/v1457670910/ballyhoo/WALK-IN/3.jpg' alt=''/>
+                                <img src='https://res.cloudinary.com/dp67gawk6/image/upload/c_scale,w_1300/v1457670910/ballyhoo/WALK-IN/13.jpg' alt=''/>
                                 <p> Text </p>
                             </div>
                         </div>
@@ -72,13 +72,13 @@ class App extends Component {
                     <div class="tile is-4 is-vertical">
                         <div class="tile">
                             <div className='ui fluid card image'>
-                                <img src='https://res.cloudinary.com/dp67gawk6/image/upload/c_scale,w_1300/v1457670910/ballyhoo/WALK-IN/3.jpg' alt=''/>
+                                <img src='https://res.cloudinary.com/dp67gawk6/image/upload/c_scale,w_1300/v1457670910/ballyhoo/WALK-IN/2.jpg' alt=''/>
                                 <p> Text </p>
                             </div>
                         </div>
                         <div class="tile">
                             <div className='ui fluid card image'>
-                                <img src='https://res.cloudinary.com/dp67gawk6/image/upload/c_scale,w_1300/v1457670910/ballyhoo/WALK-IN/3.jpg' alt=''/>
+                                <img src='https://res.cloudinary.com/dp67gawk6/image/upload/c_scale,w_1300/v1457670910/ballyhoo/WALK-IN/1.jpg' alt=''/>
                                 <p> Text </p>
                             </div>
                         </div>

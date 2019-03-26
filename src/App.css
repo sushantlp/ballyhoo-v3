@@ -1,5 +1,5 @@
 .tile:hover {
-  background: red;
+
 }
 
 .circle{
@@ -20,9 +20,15 @@
 
 
 .centertile{
-  background: url('https://res.cloudinary.com/dp67gawk6/image/upload/c_scale,w_1300/v1457670910/ballyhoo/WALK-IN/17.jpg');
+  background: url('https://res.cloudinary.com/dp67gawk6/image/upload/c_scale,w_1300/v1457670910/ballyhoo/WALK-IN/18.jpg');
   background-size: cover;
   width: 100%;
+  background-color: transparent;
+  border-radius: 0.5%;
+  height: 98%;
+  margin-top: 5px;
+  color: white;
+  background-position: center center;
 
 }
 

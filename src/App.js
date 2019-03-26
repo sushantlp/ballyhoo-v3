@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './app.css';
+import Carousel from 'nuka-carousel';
 
 class App extends Component {
   render() {
@@ -24,7 +25,8 @@ class App extends Component {
             <section className='section'>
                 <h2 className='subtitle'>Discover</h2>
                 <div className='columns is-3'>
-                    <div className='column row'>
+                <Carousel slidesToShow='6' slidesToScroll='1' wrapAround='true' cellAlign='center' autoGenerateStyleTag='true' slideIndex='3'>
+                    <div className='column'>
                         <div className='card tile circle'><span className='centered'>State</span></div>
                     </div>
                     <div className='column'>
@@ -42,56 +44,77 @@ class App extends Component {
                     <div className='column'>
                         <div className='card tile circle'><span className='centered'>State</span></div>
                     </div>                    
+                </Carousel>
                 </div>
             </section>
             <section className='section'>
                 <h2 className='subtitle'>Featured</h2>
-                <div className='columns is-3'>
-                    <div className='column row'>
-                        <div className='card tile feat'><span className='centered'>State</span></div>
+                <div class="tile is-ancestor">
+                    <div class="tile is-4 is-vertical">
+                        <div class="tile">
+                            <div className='ui fluid card image'>
+                                <img src='https://res.cloudinary.com/dp67gawk6/image/upload/c_scale,w_1300/v1457670910/ballyhoo/WALK-IN/3.jpg' alt=''/>
+                                <p> Text </p>
+                            </div>
+                        </div>
+                        <div class="tile">
+                            <div className='ui fluid card image'>
+                                <img src='https://res.cloudinary.com/dp67gawk6/image/upload/c_scale,w_1300/v1457670910/ballyhoo/WALK-IN/3.jpg' alt=''/>
+                                <p> Text </p>
+                            </div>
+                        </div>
                     </div>
-                    <div className='column'>
-                        <div className='card tile feat'><span className='centered'>State</span></div>
-                    </div>
-                    <div className='column'>
-                        <div className='card tile feat'><span className='centered'>State</span></div>
-                    </div>
-                    <div className='column'>
-                        <div className='card tile feat'><span className='centered'>State</span></div>
-                    </div>
-                    <div className='column'>
-                        <div className='card tile feat'><span className='centered'>State</span></div>
+                    <div class="tile">
+                        <div className='ui fluid card image centertile'>
+                            <p> Text </p>
+                        </div>
                     </div>                    
+                    <div class="tile is-4 is-vertical">
+                        <div class="tile">
+                            <div className='ui fluid card image'>
+                                <img src='https://res.cloudinary.com/dp67gawk6/image/upload/c_scale,w_1300/v1457670910/ballyhoo/WALK-IN/3.jpg' alt=''/>
+                                <p> Text </p>
+                            </div>
+                        </div>
+                        <div class="tile">
+                            <div className='ui fluid card image'>
+                                <img src='https://res.cloudinary.com/dp67gawk6/image/upload/c_scale,w_1300/v1457670910/ballyhoo/WALK-IN/3.jpg' alt=''/>
+                                <p> Text </p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </section>
             <section className='section'>
                 <h2 className='subtitle'>Trending</h2>
                 <div className='columns is-3'>
                     <div className='column row'>
-                        <div className='card tile trending'>State</div>
+                        <div className='ui fluid card image'>
+                            <img src='https://res.cloudinary.com/dp67gawk6/image/upload/c_scale,w_1300/v1457670910/ballyhoo/VEG/15.jpg' alt=''/>
+                        </div>
                     </div>
                     <div className='column'>
-                        <div className='card tile trending'>State</div>
+                        <img src='https://res.cloudinary.com/dp67gawk6/image/upload/c_scale,w_1300/v1457670910/ballyhoo/VEG/15.jpg' alt=''/>
                     </div>
                     <div className='column'> 
-                        <div className='card tile trending'>State</div>
+                        <img src='https://res.cloudinary.com/dp67gawk6/image/upload/c_scale,w_1300/v1457670910/ballyhoo/VEG/15.jpg' alt=''/>
                     </div>
                     <div className='column'>
-                        <div className='card tile trending'>State</div>
+                        <img src='https://res.cloudinary.com/dp67gawk6/image/upload/c_scale,w_1300/v1457670910/ballyhoo/VEG/15.jpg' alt=''/>
                     </div>                    
                 </div>
             </section>
             <section className='section'>
                 <h2 className='subtitle'>Popular</h2>
                 <div className='columns is-3'>
-                    <div className='column row'>
-                        <div className='card tile popular'>State</div>
+                    <div className='column'>
+                        <img src='https://res.cloudinary.com/dp67gawk6/image/upload/c_scale,w_1300/v1457670910/ballyhoo/VEG/5.jpg' alt=''/> 
                     </div>
                     <div className='column'>
-                        <div className='card tile popular'>State</div>
+                        <img src='https://res.cloudinary.com/dp67gawk6/image/upload/c_scale,w_1300/v1457670910/ballyhoo/VEG/5.jpg' alt=''/>
                     </div>
                     <div className='column'>
-                        <div className='card tile popular'>State</div>
+                        <img src='https://res.cloudinary.com/dp67gawk6/image/upload/c_scale,w_1300/v1457670910/ballyhoo/VEG/5.jpg' alt=''/>
                     </div>
                 </div>
             </section>

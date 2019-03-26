@@ -14,39 +14,26 @@
   color: white;
 }
 
+.tile{
+  border: 5px solid white;
+}
+
+
+.centertile{
+  background: url('https://res.cloudinary.com/dp67gawk6/image/upload/c_scale,w_1300/v1457670910/ballyhoo/WALK-IN/17.jpg');
+  background-size: cover;
+  width: 100%;
+
+}
 
 .feat{
-  height: 150px;
-  text-align: center;
-  vertical-align: middle;
-  line-height: 200px;     
-  background: url('https://res.cloudinary.com/dp67gawk6/image/upload/c_scale,w_1300/v1457670910/ballyhoo/WALK-IN/3.jpg');
-  background-size: cover;
-  color: black;
-  width: 200px;
 }
 
 .trending{
-  height: 250px;
-  text-align: center;
-  vertical-align: middle;
-  line-height: 250px;     
-  background: url('https://res.cloudinary.com/dp67gawk6/image/upload/c_scale,w_1300/v1457670910/ballyhoo/VEG/15.jpg');
-  background-size: cover;
-  color: black;
-  width: 255px;
 }
 
 
 .popular{
-  text-align: center;
-  vertical-align: middle;
-  background: url('https://res.cloudinary.com/dp67gawk6/image/upload/c_scale,w_1300/v1457670910/ballyhoo/VEG/5.jpg');
-  background-size: cover;
-  color: black;
-  height: 345px;
-  line-height: 345px;     
-  width: 350px;
 }
 
 

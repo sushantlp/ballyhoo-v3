@@ -20,6 +20,7 @@
   },
   "homepage": "https://github.com/sushantlp/ballyhoo-v3#readme",
   "dependencies": {
+    "nuka-carousel": "^4.5.3",
     "react": "^16.8.5",
     "react-dom": "^16.8.5",
     "react-scripts": "2.1.8"

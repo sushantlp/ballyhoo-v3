@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './app.css';
 import Carousel from 'nuka-carousel';
+import SlideCard from './components/featCardComponent/featCardComponent'
 
 class App extends Component {
   render() {
@@ -49,39 +50,18 @@ class App extends Component {
             </section>
             <section className='section'>
                 <h2 className='subtitle'>Featured</h2>
-                <div class="tile is-ancestor">
-                    <div class="tile is-4 is-vertical">
-                        <div class="tile">
-                            <div className='ui fluid card image'>
-                                <img src='https://res.cloudinary.com/dp67gawk6/image/upload/c_scale,w_1300/v1457670910/ballyhoo/WALK-IN/13.jpg' alt=''/>
-                                <p> Text </p>
-                            </div>
-                        </div>
-                        <div class="tile">
-                            <div className='ui fluid card image'>
-                                <img src='https://res.cloudinary.com/dp67gawk6/image/upload/c_scale,w_1300/v1457670910/ballyhoo/WALK-IN/3.jpg' alt=''/>
-                                <p> Text </p>
-                            </div>
-                        </div>
+                <div className='scards columns'>
+                    <div className='column'>
+                        <SlideCard/>
                     </div>
-                    <div class="tile">
-                        <div className='ui fluid card image centertile'>
-                            <p> Text </p>
-                        </div>
-                    </div>                    
-                    <div class="tile is-4 is-vertical">
-                        <div class="tile">
-                            <div className='ui fluid card image'>
-                                <img src='https://res.cloudinary.com/dp67gawk6/image/upload/c_scale,w_1300/v1457670910/ballyhoo/WALK-IN/2.jpg' alt=''/>
-                                <p> Text </p>
-                            </div>
-                        </div>
-                        <div class="tile">
-                            <div className='ui fluid card image'>
-                                <img src='https://res.cloudinary.com/dp67gawk6/image/upload/c_scale,w_1300/v1457670910/ballyhoo/WALK-IN/1.jpg' alt=''/>
-                                <p> Text </p>
-                            </div>
-                        </div>
+                    <div className='column'>
+                        <SlideCard/>
+                    </div>
+                    <div className='column'>
+                        <SlideCard/>
+                    </div>
+                    <div className='column'>
+                        <SlideCard/>
                     </div>
                 </div>
             </section>

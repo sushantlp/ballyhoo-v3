@@ -1,0 +1,34 @@
+.carcard{
+    margin:10px;    
+}
+
+.alice-carousel__prev-btn {
+    text-align: left;
+    margin-top: -140px;
+    margin-left: -30px;
+    position: absolute;
+    background-image: url('http://cdn.onlinewebfonts.com/svg/img_421958.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 5%;
+}
+
+.alice-carousel__prev-btn span{
+    color:white;
+
+}
+
+.alice-carousel__next-btn span{
+    color: white;
+}
+
+.alice-carousel__next-btn {
+    text-align: right;
+    margin-top: -140px;
+    margin-left: 1080px;
+    position: absolute;
+    background-image: url('https://cdn.onlinewebfonts.com/svg/img_229675.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 5%;
+}

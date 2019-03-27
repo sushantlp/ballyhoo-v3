@@ -22,6 +22,7 @@
   "dependencies": {
     "nuka-carousel": "^4.5.3",
     "react": "^16.8.5",
+    "react-alice-carousel": "^1.13.3",
     "react-dom": "^16.8.5",
     "react-scripts": "2.1.8"
   },

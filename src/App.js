@@ -1,8 +1,7 @@
 import React, { Component } from 'react';
 import './app.css';
-import Carousel from 'nuka-carousel';
 import SlideCard from './components/featCardComponent/featCardComponent'
-
+import Gallery from './components/discoverComponent/discoverComponent'
 class App extends Component {
   render() {
     return (
@@ -21,47 +20,25 @@ class App extends Component {
                 </div>
             </div>
         </section>
-
         <div>
             <section className='section'>
                 <h2 className='subtitle'>Discover</h2>
-                <div className='columns is-3'>
-                <Carousel slidesToShow='6' slidesToScroll='1' wrapAround='true' cellAlign='center' autoGenerateStyleTag='true' slideIndex='3'>
-                    <div className='column'>
-                        <div className='card tile circle'><span className='centered'>State</span></div>
-                    </div>
-                    <div className='column'>
-                        <div className='card tile circle'><span className='centered'>State</span></div>
-                    </div>
-                    <div className='column'>
-                        <div className='card tile circle'><span className='centered'>State</span></div>
-                    </div>
-                    <div className='column'>
-                        <div className='card tile circle'><span className='centered'>State</span></div>
-                    </div>
-                    <div className='column'>
-                        <div className='card tile circle'><span className='centered'>State</span></div>
-                    </div>
-                    <div className='column'>
-                        <div className='card tile circle'><span className='centered'>State</span></div>
-                    </div>                    
-                </Carousel>
-                </div>
+                <Gallery />
             </section>
             <section className='section'>
                 <h2 className='subtitle'>Featured</h2>
                 <div className='scards columns'>
                     <div className='column'>
-                        <SlideCard/>
+                        <SlideCard img='https://bit.ly/2OwcNt6' alt='alt'/>
                     </div>
                     <div className='column'>
-                        <SlideCard/>
+                        <SlideCard img='https://bit.ly/2OwcNt6' alt='alt'/>
                     </div>
                     <div className='column'>
-                        <SlideCard/>
+                        <SlideCard img='https://bit.ly/2OwcNt6' alt='alt'/>
                     </div>
                     <div className='column'>
-                        <SlideCard/>
+                        <SlideCard img='https://bit.ly/2OwcNt6' alt='alt'/>
                     </div>
                 </div>
             </section>

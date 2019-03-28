@@ -28,7 +28,7 @@ export default class Carousel extends React.Component {
             responsive={{ 1024: {items:1} }}   
             infinite={true}
             autoPlay={false}
-            duration={3000}
+            duration={2500}
             />
     }
 

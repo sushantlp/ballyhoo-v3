@@ -14,7 +14,7 @@
     vertical-align: middle;
     outline-style:none;
     background: white;
-    border: 2px solid rgba(200,200,200,0.3);
+    border: 2px solid rgba(255,255,255,0.1);
 }
 
 .prevbtn:hover{
@@ -40,7 +40,7 @@
     vertical-align: middle;
     outline-style:none;
     background: white;
-    border: 2px solid rgba(200,200,200,0.3);
+    border: 2px solid rgba(255,255,255,0.1);
 }
 
 .carousel-btns{

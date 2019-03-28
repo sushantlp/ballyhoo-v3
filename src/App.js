@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import './app.css';
-
 import SlideCard from './components/featCardComponent/featCardComponent'
 import Carousel from './components/discoverComponent/discoverComponent'
 import Search from './components/searchComponent/searchComponent'
@@ -64,11 +63,6 @@ class App extends Component {
             </section>
             <br/><br/>
             <section>
-                <h2 className='subtitle'>Trending</h2>
-                <Carousel items={this.trend_items} style txt='Trending'/>
-            </section>
-            <br/><br/>
-            <section>
                 <h2 className='subtitle'>Popular</h2>
                 <div class="tile is-ancestor">
                   <div class="tile is-vertical is-8">
@@ -100,6 +94,12 @@ class App extends Component {
                   </div>
                 </div>
             </section>        
+            <br/><br/>
+            <section>
+                <h2 className='subtitle'>Trending</h2>
+                <Carousel items={this.trend_items} style txt='Trending'/>
+            </section>
+            <br/><br/>
     </div>
         <div className='footer notification is-dark'>
           <div class="content has-text-centered">
@@ -121,8 +121,14 @@ class App extends Component {
                     </p>
                 </div>
                 <div class='column'>
-                    <p>
-                      <strong>About Us</strong>.
+                    <p class='cities'>
+                      <strong>About Us</strong><br/><br/>
+                        <li>About Headout</li>
+                        <li>Help & FAQs</li>
+                        <li>Careers</li>
+                        <li>Blog</li>
+                        <li>Privacy Policy</li>
+                        <li>Terms of Usage</li>
                     </p>
                 </div>
             </div>

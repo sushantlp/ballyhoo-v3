@@ -101,7 +101,7 @@ class App extends Component {
             </section>
             <br/><br/>
     </div>
-        <div className='footer notification is-dark'>
+        <div className='footer'>
           <div class="content has-text-centered">
             <div class='columns'>
                 <div class='column'>

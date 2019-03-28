@@ -74,27 +74,27 @@ class App extends Component {
                   <div class="tile is-vertical is-8">
                     <div class="tile">
                       <div class="tile is-parent is-vertical">
-                        <article class="tile is-child notification is-dark card">
+                        <article class="tile is-child notification card">
                           1. 
                         </article>
-                        <article class="tile is-child notification is-success card">
+                        <article class="tile is-child notification card">
                           2.  
                         </article>
                       </div>
                       <div class="tile is-parent">
-                        <article class="tile is-child notification is-warning card">
+                        <article class="tile is-child notification card">
                           3. 
                         </article>
                       </div>
                     </div>
                     <div class="tile is-parent">
-                      <article class="tile is-child notification is-info card">
+                      <article class="tile is-child notification card">
                         4. 
                       </article>
                     </div>
                   </div>
                   <div class="tile is-parent">
-                    <article class="tile is-child notification is-danger card">
+                    <article class="tile is-child notification card">
                       5. 
                     </article>
                   </div>
@@ -103,9 +103,29 @@ class App extends Component {
     </div>
         <div className='footer notification is-dark'>
           <div class="content has-text-centered">
-            <p>
-              <strong>2019 Ballyhoo</strong>.
-            </p>
+            <div class='columns'>
+                <div class='column'>
+                    <p>
+                      <strong>2019 Ballyhoo</strong>.
+                    </p>
+                </div>
+                <div class='column'>
+                    <p class='cities'>
+                      <strong>Cities</strong><br/><br/>
+                      <li>Bengaluru</li>
+                      <li>New Delhi</li>
+                      <li>Chennai</li>
+                      <li>Mumbai</li>
+                      <li>Lucknow</li>
+                      <li>Kolkata</li>
+                    </p>
+                </div>
+                <div class='column'>
+                    <p>
+                      <strong>About Us</strong>.
+                    </p>
+                </div>
+            </div>
           </div>
         </div>
       </div>

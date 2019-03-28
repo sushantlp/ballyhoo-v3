@@ -73,3 +73,9 @@
 .popular_tiles{
   width: 100%;
 }
+
+
+.cities{
+  text-align: left;
+  line-height: 1.2em;
+}

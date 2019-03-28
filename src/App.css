@@ -1,4 +1,8 @@
-  .circle{
+.container{
+  width: 100%;
+}
+
+.circle{
   border-radius: 50%;
   height: 150px;
   width: 150px;
@@ -28,18 +32,21 @@
 
 }
 
-.feat{
-}
-
-.trending{
-}
-
-
-.popular{
-}
-
-
 .centered{
   text-align: center;
   width: inherit;
+}
+
+.mast{
+  height: 350px;
+  transition: 1s;
+}
+
+
+.navbar{
+  padding: 10px;
+}
+
+.navbar h1{
+  font-size: 1.2em;
 }

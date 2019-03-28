@@ -20,6 +20,20 @@ export default class Carousel extends React.Component {
   }
 
   render() { 
+    const isMast = this.props.Mast;
+    
+    if (isMast) {
+      return <AliceCarousel
+            dotsDisabled={true}
+            buttonsDisabled={true}
+            items={this.props.items}  
+            responsive={{ 1024: {items:1} }}   
+            infinite={true}
+            autoPlay={true}
+            duration={3000}
+            />
+    }
+
     return (
     <div>
       <div className='carousel-btns'>

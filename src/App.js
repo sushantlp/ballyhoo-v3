@@ -3,6 +3,7 @@ import './app.css';
 
 import SlideCard from './components/featCardComponent/featCardComponent'
 import Carousel from './components/discoverComponent/discoverComponent'
+import Search from './components/searchComponent/searchComponent'
 
 class App extends Component {
     mast_items = [
@@ -43,8 +44,11 @@ class App extends Component {
         </div>
         <section className='mast'>
             <Carousel items={this.mast_items} Mast/>
-        </section>
-        <section className='searchf'>
+            <div className='searchf'>
+                <Search ph="Search Locality"/>&nbsp;&nbsp;&nbsp;&nbsp;
+                <Search ph="Search Collections"/>&nbsp;&nbsp;&nbsp;&nbsp;
+                <button class="searchbtn" type="button">Search</button>
+            </div>
         </section>
         <div className='container'>
             <br/><br/>

@@ -23,6 +23,25 @@
 .searchf{
   width: 80%;
   height: 60px;
-  border: 2px solid red;
-  margin: -30px auto;
+  padding: 10px;
+  border-radius: 40px;
+  position: absolute;
+  z-index: 9999;
+  background: white;
+  margin: -30px auto auto 120px;  
+}
+
+
+.searchbtn{
+    height: 50px;
+    border-radius: 50px;
+    border: 0px;
+    font-size: 1.8em;
+    padding: 5px;
+    border: 1px solid rgba(0,0,0,.1);
+    box-shadow: 0 5px 18px 0 rgba(0,0,0,.1);
+    text-align: center;
+    outline-style:none;
+    width: 150px;
+  
 }

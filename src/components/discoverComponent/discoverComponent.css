@@ -51,3 +51,8 @@
 .carousel{
     z-index: -999;
 }
+
+.carlift{
+    margin-top: -25px;
+    height: 16em;
+}

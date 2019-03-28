@@ -6,19 +6,15 @@ import "react-alice-carousel/lib/alice-carousel.css";
 import './discoverComponent.css' 
 
 
-export default class Gallery extends React.Component {  
-  items = [
-      <img src='https://bit.ly/2OwcNt6' alt='alt'/>,
-      <img src='https://bit.ly/2OwcNt6' alt='alt'/>,
-      <img src='https://bit.ly/2OwcNt6' alt='alt'/>,
-      <img src='https://bit.ly/2OwcNt6' alt='alt'/>,
-      <img src='https://bit.ly/2OwcNt6' alt='alt'/>
-  ]
+export default class Carousel extends React.Component {  
+  items = this.props.items;
 
   state = {
     galleryItems: this.items.map((i) => (
-      <div className='card carcard' key={i}>{i}
-        <p> Ballyhoo </p>
+      <div className={this.props.lift ? 'carlift' : null}>
+        <div className={this.props.style ? 'card carcard' : null} key={i}>{i}
+          <p> {this.props.txt} </p>
+        </div>
       </div>
       ))
   }

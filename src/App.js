@@ -1,8 +1,33 @@
 import React, { Component } from 'react';
 import './app.css';
 import SlideCard from './components/featCardComponent/featCardComponent'
-import Gallery from './components/discoverComponent/discoverComponent'
+import Carousel from './components/discoverComponent/discoverComponent'
 class App extends Component {
+
+    dicover_items = [
+        <img src='https://bit.ly/2U2yExZ' alt='alt'/>,
+        <img src='https://bit.ly/2U2yExZ' alt='alt'/>,
+        <img src='https://bit.ly/2U2yExZ' alt='alt'/>,
+        <img src='https://bit.ly/2U2yExZ' alt='alt'/>,
+        <img src='https://bit.ly/2OwcNt6' alt='alt'/>
+    ]
+
+    featured_items = [
+        <SlideCard img='https://bit.ly/2OwcNt6' alt='alt'/>,
+        <SlideCard img='https://bit.ly/2OwcNt6' alt='alt'/>,
+        <SlideCard img='https://bit.ly/2OwcNt6' alt='alt'/>,
+        <SlideCard img='https://bit.ly/2OwcNt6' alt='alt'/>,
+        <SlideCard img='https://bit.ly/2OwcNt6' alt='alt'/>
+    ]
+
+    trend_items = [
+        <img src='https://bit.ly/2V1OEg7' alt='alt' />,
+        <img src='https://bit.ly/2V1OEg7' alt='alt' />,
+        <img src='https://bit.ly/2V1OEg7' alt='alt' />,
+        <img src='https://bit.ly/2V1OEg7' alt='alt' />,
+        <img src='https://bit.ly/2V1OEg7' alt='alt' />
+    ]
+
   render() {
     return (
       <div className='container'>
@@ -23,57 +48,18 @@ class App extends Component {
         <div>
             <section className='section'>
                 <h2 className='subtitle'>Discover</h2>
-                <Gallery />
+                <Carousel items={this.dicover_items} style txt='Discover'/>
             </section>
             <section className='section'>
                 <h2 className='subtitle'>Featured</h2>
-                <div className='scards columns'>
-                    <div className='column'>
-                        <SlideCard img='https://bit.ly/2OwcNt6' alt='alt'/>
-                    </div>
-                    <div className='column'>
-                        <SlideCard img='https://bit.ly/2OwcNt6' alt='alt'/>
-                    </div>
-                    <div className='column'>
-                        <SlideCard img='https://bit.ly/2OwcNt6' alt='alt'/>
-                    </div>
-                    <div className='column'>
-                        <SlideCard img='https://bit.ly/2OwcNt6' alt='alt'/>
-                    </div>
-                </div>
+                <Carousel items={this.featured_items} lift/>
             </section>
             <section className='section'>
                 <h2 className='subtitle'>Trending</h2>
-                <div className='columns is-3'>
-                    <div className='column row'>
-                        <div className='ui fluid card image'>
-                            <img src='https://res.cloudinary.com/dp67gawk6/image/upload/c_scale,w_1300/v1457670910/ballyhoo/VEG/15.jpg' alt=''/>
-                        </div>
-                    </div>
-                    <div className='column'>
-                        <img src='https://res.cloudinary.com/dp67gawk6/image/upload/c_scale,w_1300/v1457670910/ballyhoo/VEG/15.jpg' alt=''/>
-                    </div>
-                    <div className='column'> 
-                        <img src='https://res.cloudinary.com/dp67gawk6/image/upload/c_scale,w_1300/v1457670910/ballyhoo/VEG/15.jpg' alt=''/>
-                    </div>
-                    <div className='column'>
-                        <img src='https://res.cloudinary.com/dp67gawk6/image/upload/c_scale,w_1300/v1457670910/ballyhoo/VEG/15.jpg' alt=''/>
-                    </div>                    
-                </div>
+                <Carousel items={this.trend_items} style txt='Trending'/>
             </section>
             <section className='section'>
                 <h2 className='subtitle'>Popular</h2>
-                <div className='columns is-3'>
-                    <div className='column'>
-                        <img src='https://res.cloudinary.com/dp67gawk6/image/upload/c_scale,w_1300/v1457670910/ballyhoo/VEG/5.jpg' alt=''/> 
-                    </div>
-                    <div className='column'>
-                        <img src='https://res.cloudinary.com/dp67gawk6/image/upload/c_scale,w_1300/v1457670910/ballyhoo/VEG/5.jpg' alt=''/>
-                    </div>
-                    <div className='column'>
-                        <img src='https://res.cloudinary.com/dp67gawk6/image/upload/c_scale,w_1300/v1457670910/ballyhoo/VEG/5.jpg' alt=''/>
-                    </div>
-                </div>
             </section>
         </div>
 
@@ -90,3 +76,4 @@ class App extends Component {
 }
 
 export default App;
+

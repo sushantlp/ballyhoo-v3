@@ -3,8 +3,8 @@ import './app.css';
 
 import SlideCard from './components/featCardComponent/featCardComponent'
 import Carousel from './components/discoverComponent/discoverComponent'
-class App extends Component {
 
+class App extends Component {
     mast_items = [
     <div className='mast'> <img src='https://bit.ly/2UYlRZW' alt='alt' /></div>,
     <div className='mast'> <img src='https://bit.ly/2FGdvRm' alt='alt' /></div>,
@@ -16,7 +16,7 @@ class App extends Component {
         <img src='https://bit.ly/2U2yExZ' alt='alt'/>,
         <img src='https://bit.ly/2U2yExZ' alt='alt'/>,
         <img src='https://bit.ly/2U2yExZ' alt='alt'/>,
-        <img src='https://bit.ly/2OwcNt6' alt='alt'/>
+        <img src='https://bit.ly/2U2yExZ' alt='alt'/>
     ]
 
     featured_items = [
@@ -39,10 +39,12 @@ class App extends Component {
     return (
       <div>
         <div className='navbar has-text-centered'>
-            <h1>BALLYHOO.TODAY</h1>
+            <h1>BALLYHOO</h1>
         </div>
         <section className='mast'>
             <Carousel items={this.mast_items} Mast/>
+        </section>
+        <section className='searchf'>
         </section>
         <div className='container'>
             <br/><br/>
@@ -65,8 +67,7 @@ class App extends Component {
                 <h2 className='subtitle'>Popular</h2>
             </section>        
         </div>
-
-        <div className='footer is-dark'>
+        <div className='footer notification is-dark'>
           <div class="content has-text-centered">
             <p>
               <strong>2019 Ballyhoo</strong>.

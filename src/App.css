@@ -2,51 +2,27 @@
   width: 100%;
 }
 
-.circle{
-  border-radius: 50%;
-  height: 150px;
-  width: 150px;
-  text-align: center;
-  vertical-align: middle;
-  line-height: 150px;     
-  background: url('https://res.cloudinary.com/dp67gawk6/image/upload/c_scale,w_1300/v1457670910/ballyhoo/WALK-IN/17.jpg');
-  background-size: cover;
-  color: white;
-}
-
 .tile{
   border: 5px solid white;
 }
 
-
-.centertile{
-  background: url('https://res.cloudinary.com/dp67gawk6/image/upload/c_scale,w_1300/v1457670910/ballyhoo/WALK-IN/18.jpg');
-  background-size: cover;
-  width: 100%;
-  background-color: transparent;
-  border-radius: 0.5%;
-  height: 98%;
-  margin-top: 5px;
-  color: white;
-  background-position: center center;
-
-}
-
-.centered{
-  text-align: center;
-  width: inherit;
-}
-
 .mast{
-  height: 350px;
+  height: 450px;
   transition: 1s;
 }
-
-
 .navbar{
   padding: 10px;
+  height: 80px;
+  vertical-align: middle;
 }
 
 .navbar h1{
   font-size: 1.2em;
+}
+
+.searchf{
+  width: 80%;
+  height: 60px;
+  border: 2px solid red;
+  margin: -30px auto;
 }

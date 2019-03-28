@@ -1,8 +1,6 @@
 import React from 'react';
-
 import AliceCarousel from 'react-alice-carousel';
 import "react-alice-carousel/lib/alice-carousel.css";
-
 import './discoverComponent.css' 
 
 
@@ -29,7 +27,7 @@ export default class Carousel extends React.Component {
             items={this.props.items}  
             responsive={{ 1024: {items:1} }}   
             infinite={true}
-            autoPlay={true}
+            autoPlay={false}
             duration={3000}
             />
     }
@@ -46,7 +44,7 @@ export default class Carousel extends React.Component {
             buttonsDisabled={true}
             items={this.state.galleryItems}
             ref={(el) => (this.Carousel = el)}   
-            responsive={{ 1024: {items:4} }}   
+            responsive={{ 1024: {items:4}, 600:{items:2} }}   
             />
       </div>
     </div>

@@ -6,7 +6,7 @@ export default class Search extends React.Component{
     {
         if(this.props.dd)
             return( <div className='ddcon'>
-                        <i class="ddicon fas fa-map-marker-alt"></i>
+                        <i className="ddicon fas fa-map-marker-alt"></i>
                         <select className='dropdown'>{this.props.options}</select> 
                     </div>
                 )

@@ -5,7 +5,6 @@ import Carousel from './components/discoverComponent/discoverComponent'
 import Search from './components/searchComponent/searchComponent'
 
 class App extends Component {
-
     mast_items = [
       <div className='mast'> <img src='https://images.unsplash.com/photo-1525159831892-59d292d558b4?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80' alt='alt' /></div>,
       <div className='mast'> <img src='https://bit.ly/2FGdvRm' alt='alt' /></div>,
@@ -58,7 +57,7 @@ class App extends Component {
                   &nbsp;&nbsp;&nbsp;&nbsp;
                 <Search ph="Search Collections"/>
                   &nbsp;&nbsp;&nbsp;&nbsp;
-                <button class="searchbtn" type="button">Search</button>
+                <button className="searchbtn" type="button">Search</button>
             </div>
         </section>
         <div className='container'>
@@ -75,34 +74,28 @@ class App extends Component {
             <br/><br/>
             <section>
                 <h2 className='subtitle'>Popular</h2>
+                <div className='tilecontainer'>
                   <div className='columns'>
-                    <div className='column is-3 t1'>
-                      
+                    <div className='column is-2 t1'>
                     </div>
                     <div className='column is-3 t2'>
-
                     </div>
                     <div className='column is-3 t3'>
-
                     </div>
-                    <div className='column is-3 t4'>
-
+                    <div className='column is-4 t4'>
                     </div>
                   </div>
                   <div className='columns'>
                     <div className='column is-3 t5'>
-
                     </div>
                     <div className='column is-3 t6'>
-
                     </div>
-                    <div className='column is-3 t7'>
-
+                    <div className='column is-4 t7'>
                     </div>
-                    <div className='column is-3 t8'>
-
+                    <div className='column is-2 t8'>
                     </div>
-                  </div>
+                  </div>                
+                </div>
             </section>        
             <br/><br/>
             <section>
@@ -112,16 +105,16 @@ class App extends Component {
             <br/><br/>
     </div>
         <div className='footer'>
-          <div class="content has-text-centered">
-            <div class='columns'>
-                <div class='column is-5 about'>
+          <div className="content has-text-centered">
+            <div className='columns'>
+                <div className='column is-5 about'>
                     <p>
                       <strong>2019 Ballyhoo</strong><br/><br/>
                       Woman camera narrative kanji beef noodles silent fetishism. Construct physical singularity Shibuya youtube j-pop systema papier-mache car Tokyo RAF drone post-nano-rebar geodesic. Shoes corporation pre-geodesic refrigerator Tokyo render-farm beef noodles face forwards tattoo motion uplink.
                     </p>
                 </div>
-                <div class='column is-2'>
-                    <p class='cities'>
+                <div className='column is-2'>
+                    <p className='cities'>
                       <strong>Cities</strong><br/><br/>
                       <li>Bengaluru</li>
                       <li>New Delhi</li>
@@ -131,8 +124,8 @@ class App extends Component {
                       <li>Kolkata</li>
                     </p>
                 </div>
-                <div class='column is-2'>
-                    <p class='cities'>
+                <div className='column is-2'>
+                    <p className='cities'>
                       <strong>About Us</strong><br/><br/>
                         <li>About Headout</li>
                         <li>Help & FAQs</li>
@@ -142,16 +135,16 @@ class App extends Component {
                         <li>Terms of Usage</li>
                     </p>
                 </div>
-                <div class='column is-3'>
-                    <p class='social'>
+                <div className='column is-3'>
+                    <p className='social'>
                       <strong>Social</strong><br/><br/>                        
-                      <i class="fab fa-twitter-square fa-2x"></i>
+                      <i className="fab fa-twitter-square fa-2x"></i>
                       &nbsp;&nbsp;&nbsp;&nbsp;
-                      <i class="fab fa-instagram fa-2x"></i>
+                      <i className="fab fa-instagram fa-2x"></i>
                       &nbsp;&nbsp;&nbsp;&nbsp;
-                      <i class="fab fa-facebook fa-2x"></i>
+                      <i className="fab fa-facebook fa-2x"></i>
                       &nbsp;&nbsp;&nbsp;&nbsp;
-                      <i class="fab fa-pinterest fa-2x"></i>
+                      <i className="fab fa-pinterest fa-2x"></i>
                       &nbsp;&nbsp;&nbsp;&nbsp;
                     </p>
                 </div>            

@@ -1,13 +1,45 @@
 .search{
-    width: 40%;
     height: 50px;
+    width: 50%;
     border-radius: 5px;
-    border: 0px;
-    font-size: 1.8em;
+    font-size: 1em;
     padding: 5px;
-    background: #f0f0f0;
+    background: #fff;
     box-shadow: 0 5px 4px 0 rgba(0,0,0,.1);
     border: 1px solid rgba(200,0,200,.1);
     text-align: center;
     outline-style:none;
+    transition: 0.5s;
+}
+
+.search:focus{
+}
+
+.ddcon{    
+    box-shadow: 0 5px 4px 0 rgba(0,0,0,.1);
+    border: 1px solid rgba(200,0,200,.1);
+    height:50px;
+    display: inline-block;  
+    outline-style:none;
+    text-align: center;
+    background: white;
+    padding:10px;
+    border-radius: 5px;
+}
+
+.ddicon{
+    color: rgba(1,10,1,0.5);
+    vertical-align: middle;
+    background: white;
+}
+
+.dropdown{
+    font-size: 1em;
+    color: rgba(1,10,1,0.5);
+    border: 0px;
+    background: white;
+    margin-left: 5px;
+    outline-style:none;
+    text-align: center;
+    margin-top: 3px;
 }

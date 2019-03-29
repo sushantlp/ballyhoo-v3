@@ -7,36 +7,45 @@ import Search from './components/searchComponent/searchComponent'
 class App extends Component {
 
     mast_items = [
-    <div className='mast'> <img src='https://bit.ly/2UYlRZW' alt='alt' /></div>,
-    <div className='mast'> <img src='https://bit.ly/2FGdvRm' alt='alt' /></div>,
-    <div className='mast'> <img src='https://bit.ly/2uuMNoy' alt='alt' /></div>
+      <div className='mast'> <img src='https://bit.ly/2UYlRZW' alt='alt' /></div>,
+      <div className='mast'> <img src='https://bit.ly/2FGdvRm' alt='alt' /></div>,
+      <div className='mast'> <img src='https://bit.ly/2uuMNoy' alt='alt' /></div>
     ]
 
     dicover_items = [
         <img src='https://bit.ly/2U2yExZ' alt='alt'/>,
+        <img src='https://bit.ly/2OwcNt6' alt='alt'/>,
+        <img src='https://bit.ly/2V1OEg7' alt='alt'/>,
         <img src='https://bit.ly/2U2yExZ' alt='alt'/>,
-        <img src='https://bit.ly/2U2yExZ' alt='alt'/>,
-        <img src='https://bit.ly/2U2yExZ' alt='alt'/>,
-        <img src='https://bit.ly/2U2yExZ' alt='alt'/>
+        <img src='https://bit.ly/2V1OEg7' alt='alt'/>
     ]
 
     featured_items = [
+        <SlideCard img='https://bit.ly/2U2yExZ' alt='alt'/>,
         <SlideCard img='https://bit.ly/2OwcNt6' alt='alt'/>,
-        <SlideCard img='https://bit.ly/2OwcNt6' alt='alt'/>,
-        <SlideCard img='https://bit.ly/2OwcNt6' alt='alt'/>,
-        <SlideCard img='https://bit.ly/2OwcNt6' alt='alt'/>,
-        <SlideCard img='https://bit.ly/2OwcNt6' alt='alt'/>
+        <SlideCard img='https://bit.ly/2V1OEg7' alt='alt'/>,
+        <SlideCard img='https://bit.ly/2U2yExZ' alt='alt'/>,
+        <SlideCard img='https://bit.ly/2V1OEg7' alt='alt'/>
     ]
 
     trend_items = [
-        <img src='https://bit.ly/2V1OEg7' alt='alt' />,
-        <img src='https://bit.ly/2V1OEg7' alt='alt' />,
-        <img src='https://bit.ly/2V1OEg7' alt='alt' />,
-        <img src='https://bit.ly/2V1OEg7' alt='alt' />,
-        <img src='https://bit.ly/2V1OEg7' alt='alt' />
+        <img src='https://bit.ly/2U2yExZ' alt='alt'/>,
+        <img src='https://bit.ly/2OwcNt6' alt='alt'/>,
+        <img src='https://bit.ly/2V1OEg7' alt='alt'/>,
+        <img src='https://bit.ly/2U2yExZ' alt='alt'/>,
+        <img src='https://bit.ly/2V1OEg7' alt='alt'/>    
     ]
 
-  render() {
+    locality_options = [
+        <option value="Bengaluru">Bengaluru</option>,
+        <option value="Chennai">Chennai</option>,
+        <option value="Kolkata">Kolkata</option>,
+        <option value="New Delhi">New Delhi</option>,
+        <option value="Lucknow">Lucknow</option>
+    ]
+
+  render() 
+  {
     return (
       <div>
         <div className='navbar has-text-centered'>
@@ -44,14 +53,16 @@ class App extends Component {
         </div>
         <section className='mast'>
             <Carousel items={this.mast_items} Mast/>
-            <div className='searchf'>
-                <Search ph="Search Locality"/>&nbsp;&nbsp;&nbsp;&nbsp;
-                <Search ph="Search Collections"/>&nbsp;&nbsp;&nbsp;&nbsp;
+            <div className='searchanddd'>
+                <Search dd options={this.locality_options} ph="Search Locality"/>
+                  &nbsp;&nbsp;&nbsp;&nbsp;
+                <Search ph="Search Collections"/>
+                  &nbsp;&nbsp;&nbsp;&nbsp;
                 <button class="searchbtn" type="button">Search</button>
             </div>
         </section>
         <div className='container'>
-            <br/><br/>
+          <br/><br/>
            <section>
                 <h2 className='subtitle'>Discover</h2>
                 <Carousel items={this.dicover_items} style txt='Discover'/>
@@ -104,12 +115,12 @@ class App extends Component {
         <div className='footer'>
           <div class="content has-text-centered">
             <div class='columns'>
-                <div class='column'>
+                <div class='column  is-3'>
                     <p>
-                      <strong>2019 Ballyhoo</strong>.
+                      <strong>2019 Ballyhoo</strong>
                     </p>
                 </div>
-                <div class='column'>
+                <div class='column is-2'>
                     <p class='cities'>
                       <strong>Cities</strong><br/><br/>
                       <li>Bengaluru</li>
@@ -120,7 +131,7 @@ class App extends Component {
                       <li>Kolkata</li>
                     </p>
                 </div>
-                <div class='column'>
+                <div class='column is-2'>
                     <p class='cities'>
                       <strong>About Us</strong><br/><br/>
                         <li>About Headout</li>

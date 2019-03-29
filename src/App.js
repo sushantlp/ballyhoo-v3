@@ -7,33 +7,33 @@ import Search from './components/searchComponent/searchComponent'
 class App extends Component {
 
     mast_items = [
-      <div className='mast'> <img src='https://bit.ly/2UYlRZW' alt='alt' /></div>,
+      <div className='mast'> <img src='https://images.unsplash.com/photo-1525159831892-59d292d558b4?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80' alt='alt' /></div>,
       <div className='mast'> <img src='https://bit.ly/2FGdvRm' alt='alt' /></div>,
       <div className='mast'> <img src='https://bit.ly/2uuMNoy' alt='alt' /></div>
     ]
 
     dicover_items = [
-        <img src='https://bit.ly/2U2yExZ' alt='alt'/>,
-        <img src='https://bit.ly/2OwcNt6' alt='alt'/>,
-        <img src='https://bit.ly/2V1OEg7' alt='alt'/>,
-        <img src='https://bit.ly/2U2yExZ' alt='alt'/>,
-        <img src='https://bit.ly/2V1OEg7' alt='alt'/>
+        <img src='https://images.unsplash.com/photo-1477747219299-60f95c811fef?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80' alt='alt'/>,
+        <img src='https://images.unsplash.com/photo-1541283014184-791fa57c0735?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80' alt='alt'/>,
+        <img src='https://images.unsplash.com/photo-1459749411175-04bf5292ceea?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80' alt='alt'/>,
+        <img src='https://images.unsplash.com/photo-1471967183320-ee018f6e114a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=751&q=80' alt='alt'/>,
+        <img src='https://images.unsplash.com/photo-1458891216473-4f26bb4eb40e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80' alt='alt'/>
     ]
 
     featured_items = [
+        <SlideCard img='https://images.unsplash.com/photo-1458891216473-4f26bb4eb40e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80' alt='alt'/>,
+        <SlideCard img='https://images.unsplash.com/photo-1528605248644-14dd04022da1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80' alt='alt'/>,
+        <SlideCard img='https://images.unsplash.com/photo-1468270738566-d3ec1f179d5c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80' alt='alt'/>,
         <SlideCard img='https://bit.ly/2U2yExZ' alt='alt'/>,
-        <SlideCard img='https://bit.ly/2OwcNt6' alt='alt'/>,
-        <SlideCard img='https://bit.ly/2V1OEg7' alt='alt'/>,
-        <SlideCard img='https://bit.ly/2U2yExZ' alt='alt'/>,
-        <SlideCard img='https://bit.ly/2V1OEg7' alt='alt'/>
+        <SlideCard img='https://images.unsplash.com/photo-1464676015774-81a71be95929?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80' alt='alt'/>
     ]
 
     trend_items = [
+        <img src='https://images.unsplash.com/photo-1553277001-9f2c6bead6f3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=751&q=80' alt='alt'/>,
+        <img src='https://images.unsplash.com/photo-1519671482749-fd09be7ccebf?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80' alt='alt'/>,
+        <img src='https://images.unsplash.com/photo-1519214605650-76a613ee3245?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=749&q=80' alt='alt'/>,
         <img src='https://bit.ly/2U2yExZ' alt='alt'/>,
-        <img src='https://bit.ly/2OwcNt6' alt='alt'/>,
-        <img src='https://bit.ly/2V1OEg7' alt='alt'/>,
-        <img src='https://bit.ly/2U2yExZ' alt='alt'/>,
-        <img src='https://bit.ly/2V1OEg7' alt='alt'/>    
+        <img src='https://images.unsplash.com/photo-1473691955023-da1c49c95c78?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60' alt='alt'/>    
     ]
 
     locality_options = [
@@ -154,7 +154,6 @@ class App extends Component {
                       &nbsp;&nbsp;&nbsp;&nbsp;
                       <i class="fab fa-pinterest fa-2x"></i>
                       &nbsp;&nbsp;&nbsp;&nbsp;
-
                     </p>
                 </div>            
                 </div>

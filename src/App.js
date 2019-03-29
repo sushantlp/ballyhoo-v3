@@ -115,9 +115,10 @@ class App extends Component {
         <div className='footer'>
           <div class="content has-text-centered">
             <div class='columns'>
-                <div class='column  is-3'>
+                <div class='column is-5 about'>
                     <p>
-                      <strong>2019 Ballyhoo</strong>
+                      <strong>2019 Ballyhoo</strong><br/><br/>
+                      Woman camera narrative kanji beef noodles silent fetishism. Construct physical singularity Shibuya youtube j-pop systema papier-mache car Tokyo RAF drone post-nano-rebar geodesic. Shoes corporation pre-geodesic refrigerator Tokyo render-farm beef noodles face forwards tattoo motion uplink.
                     </p>
                 </div>
                 <div class='column is-2'>
@@ -142,7 +143,21 @@ class App extends Component {
                         <li>Terms of Usage</li>
                     </p>
                 </div>
-            </div>
+                <div class='column is-3'>
+                    <p class='social'>
+                      <strong>Social</strong><br/><br/>                        
+                      <i class="fab fa-twitter-square fa-2x"></i>
+                      &nbsp;&nbsp;&nbsp;&nbsp;
+                      <i class="fab fa-instagram fa-2x"></i>
+                      &nbsp;&nbsp;&nbsp;&nbsp;
+                      <i class="fab fa-facebook fa-2x"></i>
+                      &nbsp;&nbsp;&nbsp;&nbsp;
+                      <i class="fab fa-pinterest fa-2x"></i>
+                      &nbsp;&nbsp;&nbsp;&nbsp;
+
+                    </p>
+                </div>            
+                </div>
           </div>
         </div>
       </div>

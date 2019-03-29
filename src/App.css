@@ -84,3 +84,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff5a5f', end
 .footer strong{
   color: #ADF8FF;
 }
+
+.about{
+  text-align: left;
+  font-size: 1em;
+}

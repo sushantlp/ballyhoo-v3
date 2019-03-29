@@ -75,35 +75,34 @@ class App extends Component {
             <br/><br/>
             <section>
                 <h2 className='subtitle'>Popular</h2>
-                <div class="tile is-ancestor">
-                  <div class="tile is-vertical is-8">
-                    <div class="tile">
-                      <div class="tile is-parent is-vertical">
-                        <article class="tile is-child notification card">
-                          1. 
-                        </article>
-                        <article class="tile is-child notification card">
-                          2.  
-                        </article>
-                      </div>
-                      <div class="tile is-parent">
-                        <article class="tile is-child notification card">
-                          3. 
-                        </article>
-                      </div>
+                  <div className='columns'>
+                    <div className='column is-3 t1'>
+                      
                     </div>
-                    <div class="tile is-parent">
-                      <article class="tile is-child notification card">
-                        4. 
-                      </article>
+                    <div className='column is-3 t2'>
+
+                    </div>
+                    <div className='column is-3 t3'>
+
+                    </div>
+                    <div className='column is-3 t4'>
+
                     </div>
                   </div>
-                  <div class="tile is-parent">
-                    <article class="tile is-child notification card">
-                      5. 
-                    </article>
+                  <div className='columns'>
+                    <div className='column is-3 t5'>
+
+                    </div>
+                    <div className='column is-3 t6'>
+
+                    </div>
+                    <div className='column is-3 t7'>
+
+                    </div>
+                    <div className='column is-3 t8'>
+
+                    </div>
                   </div>
-                </div>
             </section>        
             <br/><br/>
             <section>

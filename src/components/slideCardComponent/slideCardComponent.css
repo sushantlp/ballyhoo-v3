@@ -16,6 +16,7 @@
 .details{
   transition:0.5s;
   opacity:0;
+  margin-top: 10px;
 }
 
 .animated{

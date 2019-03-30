@@ -1,4 +1,11 @@
-.mast{
-  height: 450px;
+.mast_search{
   transition: 1s;
+  margin: 0 auto;
+}
+
+.searchanddd{
+    width: 60%;
+    margin: 0 auto;
+    margin-top: -25px;
+    position: relative;
 }

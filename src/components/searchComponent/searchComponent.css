@@ -1,15 +1,11 @@
 .search{
-    height: 50px;
-    width: 50%;
-    border-radius: 5px;
-    font-size: 1em;
-    padding: 5px;
-    background: #fff;
-    box-shadow: 0 5px 4px 0 rgba(0,0,0,.1);
-    border: 1px solid rgba(200,0,200,.1);
+    font-size: 1em;    
+    transition: 0.5s;
+    height:100%;
     text-align: center;
     outline-style:none;
-    transition: 0.5s;
+    width: 400px;
+    border: 0;
 }
 
 .search:focus{
@@ -18,13 +14,28 @@
 .ddcon{    
     box-shadow: 0 5px 4px 0 rgba(0,0,0,.1);
     border: 1px solid rgba(200,0,200,.1);
-    height:50px;
     display: inline-block;  
     outline-style:none;
     text-align: center;
     background: white;
     padding:10px;
     border-radius: 5px;
+}
+
+.searchcon{
+    width: 58%;
+    border-radius: 5px;
+    padding:10px;
+    background: #fff;
+    box-shadow: 0 5px 4px 0 rgba(0,0,0,.1);
+    border: 1px solid rgba(200,0,200,.1);
+    outline-style:none;
+    display: inline-block;
+}
+
+.sicon{
+    float:right;
+    margin-top: 5px;
 }
 
 .ddicon{
@@ -44,20 +55,10 @@
     margin-top: 3px;
 }
 
-.searchanddd{
-  width: 54%;
-  margin: 0 auto;
-  margin-top: -35px;
-  position: relative;
-  padding: 10px;
-  /*border:1px solid green;*/
-}
-
 .searchbtn{
-    height: 50px;
+    height: 47px;
     border-radius:5px;
     font-size: 1em;
-    padding: 5px;
     border: 1px solid rgba(200,0,200,.1);
     box-shadow: 0 5px 4px 0 rgba(0,0,0,.1);
     text-align: center;

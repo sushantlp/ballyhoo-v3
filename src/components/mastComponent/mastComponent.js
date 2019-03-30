@@ -12,17 +12,15 @@ export default class Mast extends Component {
     
     render(){
         return(
-           <div>
-            <section className='mast'>
-                <Carousel items={this.mast_items} Mast/>
-                <div className='searchanddd'>
-                    <Search dd options={this.locality_options} ph="Search Locality"/>
-                      &nbsp;&nbsp;&nbsp;&nbsp;
-                    <Search ph="Search Collections"/>
-                      &nbsp;&nbsp;&nbsp;&nbsp;
-                    <button className="searchbtn" type="button">Search</button>
-                </div>
-            </section><br/><br/>
+            <div className='mast_search'>
+              <Carousel className='mast' items={this.mast_items} Mast/>
+              <div className='searchanddd'>
+                <Search dd options={this.locality_options} ph="Search Locality"/>
+                  &nbsp;&nbsp;&nbsp;&nbsp;
+                <Search ph="Search Collections"/>
+                  &nbsp;&nbsp;&nbsp;&nbsp;
+                <button className="searchbtn" type="button">Search</button>
+              </div>
             </div>
             )
     }

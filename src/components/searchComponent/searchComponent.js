@@ -13,12 +13,17 @@ export default class Search extends React.Component{
     render()
     {
         if(this.props.dd)
-            return( <div className='ddcon'>
+            return( 
+                    <div className='ddcon'>
                         <i className="ddicon fas fa-map-marker-alt"></i>
                         <select className='dropdown'>{this.locality_options}</select> 
                     </div>
                 )
-
-        return <input type="text" placeholder={this.props.ph} required className='search'/>
+        return (
+            <div className='searchcon'>
+                <i className="sicon fas fa-search"></i>
+                <input type="text" className='search' placeholder={this.props.ph} required/>
+            </div>
+        )
     }
 }

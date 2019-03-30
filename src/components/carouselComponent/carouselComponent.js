@@ -3,7 +3,6 @@ import AliceCarousel from 'react-alice-carousel';
 import "react-alice-carousel/lib/alice-carousel.css";
 import './carouselComponent.css' 
 
-
 export default class Carousel extends React.Component {  
   items = this.props.items;
 
@@ -21,7 +20,9 @@ export default class Carousel extends React.Component {
     const isMast = this.props.Mast;
     
     if (isMast) {
-      return <AliceCarousel
+      return (
+        <div className='mast'>
+          <AliceCarousel
             dotsDisabled={true}
             buttonsDisabled={true}
             items={this.props.items}  
@@ -30,6 +31,8 @@ export default class Carousel extends React.Component {
             autoPlay={false}
             duration={2500}
             />
+          </div>
+        )
     }
 
     return (

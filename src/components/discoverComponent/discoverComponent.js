@@ -1,54 +1,23 @@
-import React from 'react';
-import AliceCarousel from 'react-alice-carousel';
-import "react-alice-carousel/lib/alice-carousel.css";
-import './discoverComponent.css' 
+import Carousel from '../carouselComponent/carouselComponent'
+import SlideCard from '../slideCardComponent/slideCardComponent'
+
+import React, { Component } from 'react';
 
 
-export default class Carousel extends React.Component {  
-  items = this.props.items;
-
-  state = {
-    galleryItems: this.items.map((i) => (
-      <div className={this.props.lift ? 'carlift' : null}>
-        <div className={this.props.style ? 'card carcard' : null} key={i}>{i}
-          <p> {this.props.txt} </p>
-        </div>
-      </div>
-      ))
-  }
-
-  render() { 
-    const isMast = this.props.Mast;
-    
-    if (isMast) {
-      return <AliceCarousel
-            dotsDisabled={true}
-            buttonsDisabled={true}
-            items={this.props.items}  
-            responsive={{ 1024: {items:1} }}   
-            infinite={true}
-            autoPlay={false}
-            duration={2500}
-            />
+export default class Discover extends Component{
+    discover_items = [
+        <SlideCard img='http://bit.ly/2FA5xIy' alt='alt'/>,
+        <SlideCard img='http://bit.ly/2FAH4Tn' alt='alt'/>,
+        <SlideCard img='http://bit.ly/2Fzmvqf' alt='alt'/>,
+        <SlideCard img='https://bit.ly/2U2yExZ' alt='alt'/>,
+        <SlideCard img='http://bit.ly/2FAhVbn' alt='alt'/>
+    ]
+    render(){
+        return(<div className='discover_section'>
+                    <h2 className='subtitle'>Discover</h2>
+                    <Carousel items={this.discover_items} lift/>
+                    <br/><br/>
+                </div>
+            )
     }
-
-    return (
-    <div>
-      <div className='carousel-btns'>
-        <button className='prevbtn' onClick={() => this.Carousel._slidePrev()}>⮃</button>
-        <button className='nextbtn' onClick={() => this.Carousel._slideNext()}>⮁</button>    
-      </div>
-      <div className='carousel'>
-        <AliceCarousel
-            dotsDisabled={true}
-            buttonsDisabled={true}
-            items={this.state.galleryItems}
-            ref={(el) => (this.Carousel = el)}   
-            responsive={{ 1024: {items:4}, 600:{items:2} }}   
-            />
-      </div>
-    </div>
-
-    );
-  }
 }

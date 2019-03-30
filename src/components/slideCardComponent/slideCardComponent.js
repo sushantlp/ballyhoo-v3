@@ -1,5 +1,5 @@
 import React from 'react';
-import './featCardComponent.css'
+import './slideCardComponent.css'
 
 
 export default class SlideCard extends React.Component{  

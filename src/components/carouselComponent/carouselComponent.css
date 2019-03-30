@@ -1,6 +1,10 @@
+.carousel_container{
+}
+
 .carcard{
     margin:10px;    
     width: 15em;
+    height: 16em;
     padding: 5px;
 }
 
@@ -48,7 +52,7 @@
     width: 100%;
     margin-left: -15px;
     margin-top: 75px;
-    z-index: 999;
+    z-index: 9;
 
 }
 

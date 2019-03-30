@@ -1,0 +1,14 @@
+.navbar{
+  padding: 10px;
+  height: 80px;
+  vertical-align: middle;
+  background: #000;
+  color: #fff;
+  font-family: 'Bangers', cursive;
+  font-size: 1.8em;
+
+}
+
+.navbar h1{
+  font-size: 1.2em;
+}

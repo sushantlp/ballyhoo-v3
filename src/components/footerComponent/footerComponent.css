@@ -1,0 +1,18 @@
+.cities{
+    text-align: left;
+    line-height: 1.2em;
+}
+
+.footer{
+    background: #444A62;  
+    color: white;
+}
+
+.footer strong{
+    color: #ADF8FF;
+}
+
+.about{
+    text-align: left;
+    font-size: 1em;
+}

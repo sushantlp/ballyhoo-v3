@@ -15,7 +15,7 @@ class App extends Component {
       <div>
         <Navbar />
         <Mast/>
-        <div className='container'><br/><br/>
+        <div className='container'>
           <Discover />
           <Featured />
           <Popular />

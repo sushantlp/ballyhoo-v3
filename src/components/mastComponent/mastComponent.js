@@ -1,7 +1,7 @@
 import Carousel from '../carouselComponent/carouselComponent'
 import Search from '../searchComponent/searchComponent'
-
-import React, { Component } from 'react';
+import React, { Component } from 'react'
+import './mastComponent.css'
 
 export default class Mast extends Component {
     mast_items = [
@@ -22,7 +22,7 @@ export default class Mast extends Component {
                       &nbsp;&nbsp;&nbsp;&nbsp;
                     <button className="searchbtn" type="button">Search</button>
                 </div>
-            </section>
+            </section><br/><br/>
             </div>
             )
     }

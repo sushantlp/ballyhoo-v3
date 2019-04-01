@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import './footerComponent.css';
 
+import AppStore from "./img/appstore_badge_en.svg";
+import GooglePlay from "./img/googleplay_badge_en.svg";
 
 export default class Footer extends Component {    
     render(){
@@ -14,6 +16,13 @@ export default class Footer extends Component {
                           <strong>2019 Ballyhoo</strong><br/><br/>
                           Woman camera narrative kanji beef noodles silent fetishism. Construct physical singularity Shibuya youtube j-pop systema papier-mache car Tokyo RAF drone post-nano-rebar geodesic. Shoes corporation pre-geodesic refrigerator Tokyo render-farm beef noodles face forwards tattoo motion uplink.
                         </p>
+
+                        <img  src={GooglePlay}
+                              style={{  width: "160px", height: "auto"}}
+                              alt='AppStore'
+                              />
+                        <span className='ps'><img  src={AppStore} alt='GooglePlay'/></span>
+
                     </div>
                     <div className='column is-2'>
                         <p className='cities'>

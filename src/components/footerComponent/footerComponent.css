@@ -16,3 +16,10 @@
     text-align: left;
     font-size: 1em;
 }
+
+.ps{ 
+    display: inline;
+    float: right;
+    margin-top: 10px;
+    margin-right:150px;
+}

@@ -61,11 +61,17 @@
   font-size: 0.5em;
   display: inline-block;
   margin-right: 20px;
+  transition: 0.5px;
 }
 .nav_menu_text:hover{
-  background: yellow;
   color: black;
+  padding: 5px;
   cursor: pointer;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ff5a5f+0,ff5a5f+100&1+0,0.9+100 */
+    background: -moz-linear-gradient(top, rgba(255,90,95,1) 0%, rgba(255,90,95,0.9) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, rgba(255,90,95,1) 0%,rgba(255,90,95,0.9) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, rgba(255,90,95,1) 0%,rgba(255,90,95,0.9) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff5a5f', endColorstr='#e6ff5a5f',GradientType=0 ); /* IE6-9 */  
 }
 
 .nav_menu_right{

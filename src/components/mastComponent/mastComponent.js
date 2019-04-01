@@ -15,7 +15,7 @@ export default class Mast extends Component {
             <div className='mast_search'>
               <Carousel className='mast' items={this.mast_items} Mast/>
               <div className='searchanddd'>
-                <Search dd options={this.locality_options} ph="Search Locality"/>
+                <Search dd options={this.props.options} ph="Search Locality"/>
                   &nbsp;&nbsp;&nbsp;&nbsp;
                 <Search ph="Search Collections"/>
                   &nbsp;&nbsp;&nbsp;&nbsp;

@@ -9,12 +9,20 @@ import Navbar from './components/navbarComponent/navbarComponent'
 import './app.css'
 
 class App extends Component {
+  locality_options = [
+      <option value="Bengaluru">Bengaluru</option>,
+      <option value="Chennai">Chennai</option>,
+      <option value="Kolkata">Kolkata</option>,
+      <option value="New Delhi">New Delhi</option>,
+      <option value="Lucknow">Lucknow</option>
+  ]
+
   render() 
   {
     return (
       <div>
-        <Navbar />
-        <Mast/>
+        <Navbar options={this.locality_options}/>
+        <Mast options={this.locality_options}/>
         <div className='container'>
           <Discover />
           <Featured />

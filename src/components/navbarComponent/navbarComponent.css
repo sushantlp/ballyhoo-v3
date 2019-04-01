@@ -1,14 +1,55 @@
+.brandname{
+    padding: 5px;
+}
+
+.nav_searchbar{
+    margin-left: 15px;
+    margin-top:-3px;
+    padding: 5px;
+    margin: 0 auto;
+}
+
+.nav_dropdown{
+    height: 35px;
+    font-size: 0.5em;
+    border: 0px;
+    background: #555;
+    color: #ddd;
+    outline-style:none;
+}
+
+.nav_search{
+    font-size: 0.5em;
+    height: 35px;
+    width: 500px;
+    background: #555;
+    color: white;
+    border: 0px;
+    border-radius: 5px;    
+    text-align: center;
+    outline-style:none;
+
+}
+
+.nav_search::placeholder { color: #ddd; }
+
+
 .navbar{
   padding: 10px;
-  height: 80px;
   vertical-align: middle;
   background: #000;
   color: #fff;
   font-family: 'Bangers', cursive;
   font-size: 1.8em;
-
 }
 
 .navbar h1{
   font-size: 1.2em;
+}
+
+
+.nav_text{
+  font-family: helvetica;
+  font-size: 0.5em;
+  margin-top: 5px;
 }

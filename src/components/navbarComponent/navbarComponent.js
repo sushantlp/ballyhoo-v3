@@ -2,7 +2,12 @@ import React from 'react';
 import './navbarComponent.css'
 
 export default class Navbar extends React.Component{
-    render(){
+    render()
+    {
+        const locations = this.props.options.map((name,i) =>{
+            return(<option value={name} key={i}>{name}</option>)
+        })
+
         return(
             <div>
                 <div className='navbar has-text-centered columns'>
@@ -10,12 +15,14 @@ export default class Navbar extends React.Component{
                         <h1>BALLYHOO</h1>
                     </div>
                     <div className='nav_searchbar column is-5'>
-                       <select className='nav_dropdown'>{this.props.options}</select>
+                       <select className='nav_dropdown'>
+                            {locations}
+                        </select>
                        &nbsp;
                        <input  type="text" className='nav_search' placeholder='search' required/>
                     </div>
                     <div className='column'>
-                        <i class="fa fa-user-circle"><p className='nav_text'>Sign in</p></i>
+                        <i className="fa fa-user-circle"><p className='nav_text'>Sign in</p></i>
                     </div>
                 </div>
                 <div className='nav_menu columns'>

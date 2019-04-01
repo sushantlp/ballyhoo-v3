@@ -11,11 +11,11 @@ import './app.css'
 class App extends Component {
   
   locality_options = [
-      <option value="Bengaluru">Bengaluru</option>,
-      <option value="Chennai">Chennai</option>,
-      <option value="Kolkata">Kolkata</option>,
-      <option value="New Delhi">New Delhi</option>,
-      <option value="Lucknow">Lucknow</option>
+      'Bengaluru',
+      'Chennai',
+      'Kolkata',
+      'New Delhi',
+      'Lucknow'
   ]
 
   render() 

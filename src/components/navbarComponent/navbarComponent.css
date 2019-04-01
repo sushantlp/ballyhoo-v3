@@ -2,13 +2,11 @@
     padding: 5px;
     height: 40%;
 }
-
 .nav_searchbar{
     padding: 5px;
     margin: 0 auto;
     height: 50%;
 }
-
 .nav_dropdown{
     height: 35px;
     font-size: 0.5em;
@@ -17,7 +15,6 @@
     color: #ddd;
     outline-style:none;
 }
-
 .nav_search{
     font-size: 0.5em;
     height: 35px;
@@ -30,12 +27,9 @@
     outline-style:none;
 
 }
-
 .nav_search::placeholder { color: #ddd; }
-
-
 .navbar{
-  height: 75px;
+  height: 70px;
   padding: 10px;
   vertical-align: middle;
   background: #000;
@@ -43,22 +37,40 @@
   font-family: 'Bangers', cursive;
   font-size: 1.8em;
 }
-
 .navbar h1{
   font-size: 1.2em;
 }
-
 .nav_text{
   font-family: helvetica;
   font-size: 0.5em;
   margin-top: 5px;
 }
-
 .nav_menu{
-  height: 70px;
   color: white;
   font-size: 1.8em;
-  padding: 15px;
   background: black;
+  height: 100%;
+}
+
+.nav_menu .column{
   margin-top: -25px;
+  height: 75px;
+}
+
+.nav_menu_text{
+  font-size: 0.5em;
+  display: inline-block;
+  margin-right: 20px;
+}
+.nav_menu_text:hover{
+  background: yellow;
+  color: black;
+  cursor: pointer;
+}
+
+.nav_menu_right{
+  font-size: 0.5em;
+  display: inline-block;
+  margin-top: 15px;
+  float: right;  
 }

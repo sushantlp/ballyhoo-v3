@@ -18,8 +18,17 @@ export default class Navbar extends React.Component{
                         <i class="fa fa-user-circle"><p className='nav_text'>Sign in</p></i>
                     </div>
                 </div>
-                <div className='nav_menu'>
-                    <p className='nav_text'>MENU</p>       
+                <div className='nav_menu columns is-10'>
+                    <div className='column'>
+                        <p className='nav_menu_text'>MENU</p>       
+                        <p className='nav_menu_text'>Discover</p>       
+                        <p className='nav_menu_text'>Featured</p>       
+                        <p className='nav_menu_text'>Popular</p>       
+                        <p className='nav_menu_text'>Trending</p>
+                    </div>
+                    <div className='column is-2'>
+                        <p className='nav_menu_right'>Download App</p>
+                    </div>
                 </div>
             </div>
             )

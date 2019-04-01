@@ -9,6 +9,7 @@ import Navbar from './components/navbarComponent/navbarComponent'
 import './app.css'
 
 class App extends Component {
+  
   locality_options = [
       <option value="Bengaluru">Bengaluru</option>,
       <option value="Chennai">Chennai</option>,

@@ -3,12 +3,9 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './app';
 import * as serviceWorker from './serviceWorker';
-
-
-
 ReactDOM.render(<App />, document.getElementById('root'));
 
-//HOT RELOADING
+//HOT RELOADING - - DO NOT REMOVE
 //https://medium.com/@brianhan/hot-reloading-cra-without-eject-b54af352c642
 
 if(module.hot){

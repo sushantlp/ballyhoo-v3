@@ -1,16 +1,25 @@
+.tiletext{
+  text-shadow: 0px 0.09em #FF00FF;
+  margin: 0 auto;
+}
+
 .t1{
   width: 250px;
   height: 250px;
   background: url('https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80');
   background-repeat: no-repeat;
   background-size: cover;
-  -webkit-filter: grayscale(50%); /* Safari 6.0 - 9.0 */
+  background-position: center;
+  transition: all 0.5s ease;
+ -webkit-filter: grayscale(50%); /* Safari 6.0 - 9.0 */
   filter: grayscale(50%);
+  color: white;
 }
 
 .t1:hover{
   -webkit-filter: grayscale(0%); /* Safari 6.0 - 9.0 */
   filter: grayscale(0%);
+  transform: scale(1.1);
 }
 
 .t2{
@@ -21,11 +30,15 @@
   background-size: cover;
   -webkit-filter: grayscale(50%); /* Safari 6.0 - 9.0 */
   filter: grayscale(50%);
+  background-position: center;
+  transition: all 0.5s ease;
+  overflow: hidden;
 }
 
 .t2:hover{
   -webkit-filter: grayscale(0%); /* Safari 6.0 - 9.0 */
   filter: grayscale(0%);
+  transform: scale(1.1);
 }
 
 .t3{
@@ -36,11 +49,15 @@
   background-size: cover;
   -webkit-filter: grayscale(50%); /* Safari 6.0 - 9.0 */
   filter: grayscale(50%);
+  background-position: center;
+  transition: all 0.5s ease;
+  overflow: hidden;
 }
 
 .t3:hover{
   -webkit-filter: grayscale(0%); /* Safari 6.0 - 9.0 */
   filter: grayscale(0%);
+  transform: scale(1.1);
 }
 
 .t4{
@@ -51,11 +68,13 @@
   background-size: cover;
     -webkit-filter: grayscale(50%); /* Safari 6.0 - 9.0 */
   filter: grayscale(50%);
+  transition: all 0.5s ease;
 }
 
 .t4:hover{
   -webkit-filter: grayscale(0%); /* Safari 6.0 - 9.0 */
   filter: grayscale(0%);
+  transform: scale(1.1);
 }
 
 .t5{
@@ -66,11 +85,14 @@
   background-size: cover;
   -webkit-filter: grayscale(50%); /* Safari 6.0 - 9.0 */
   filter: grayscale(50%);
+  transition: all 0.5s ease;
+
 }
 
 .t5:hover{
   -webkit-filter: grayscale(0%); /* Safari 6.0 - 9.0 */
   filter: grayscale(0%);
+  transform: scale(1.1);
 }
 
 .t6{
@@ -81,11 +103,13 @@
   background-size: cover;
   -webkit-filter: grayscale(50%); /* Safari 6.0 - 9.0 */
   filter: grayscale(50%);
+  transition: all 0.5s ease;
 }
 
 .t6:hover{
   -webkit-filter: grayscale(0%); /* Safari 6.0 - 9.0 */
   filter: grayscale(0%);
+  transform: scale(1.1);
 }
 
 
@@ -97,11 +121,13 @@
   background-size: cover;
   -webkit-filter: grayscale(50%); /* Safari 6.0 - 9.0 */
   filter: grayscale(50%);
+  transition: all 0.5s ease;
 }
 
 .t7:hover{
   -webkit-filter: grayscale(0%); /* Safari 6.0 - 9.0 */
   filter: grayscale(0%);
+  transform: scale(1.1);
 }
 
 .t8{
@@ -112,10 +138,12 @@
   background-size: cover;
   -webkit-filter: grayscale(50%); /* Safari 6.0 - 9.0 */
   filter: grayscale(50%);
+  transition: all 0.5s ease;
   }
 
   .t8:hover{
   -webkit-filter: grayscale(0%); /* Safari 6.0 - 9.0 */
   filter: grayscale(0%);
+  transform: scale(1.1);
   }
 

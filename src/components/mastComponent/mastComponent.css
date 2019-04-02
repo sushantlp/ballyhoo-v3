@@ -4,11 +4,12 @@
 
 @media only screen and (max-width : 640px) {
     .mast_search{
-
+        margin-top: -100px;
     }
 
     .searchanddd{
         min-width: 600px;
+        margin-top: -45px !important;
     }
 }
 

@@ -1,5 +1,7 @@
 import Carousel from '../carouselComponent/carouselComponent'
 import React, { Component } from 'react';
+import './featuredComponent.css'
+
 
 export default class Featured extends Component {
     featured_items = [
@@ -12,7 +14,7 @@ export default class Featured extends Component {
     
     render(){
         return(
-           <div>
+           <div className='featured_section'>
                 <h2 className='subtitle'>Featured</h2>
                 <Carousel items={this.featured_items} style txt='Discover'/>
                 <br/><br/>

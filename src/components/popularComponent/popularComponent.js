@@ -4,10 +4,10 @@ import './popularComponent.css'
 export default class Popular extends React.Component{
     render(){
         return(
-            <div>
+            <div className='popular_section'>
                 <h2 className='subtitle'>Popular</h2><br/>
                 <div className='tilecontainer'>
-                  <div className='columns'>
+                  <div className='columns is-mobile'>
                     <div className='column is-2 t1'>
                         <p className='tiletext'>Popular</p>
                     </div>
@@ -21,7 +21,7 @@ export default class Popular extends React.Component{
                         <p className='tiletext'>Popular</p>
                     </div>
                   </div>
-                  <div className='columns'>
+                  <div className='columns  is-mobile'>
                     <div className='column is-3 t5'>
                         <p className='tiletext'>Popular</p>
                     </div>

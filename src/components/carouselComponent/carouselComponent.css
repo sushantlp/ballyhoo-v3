@@ -1,3 +1,17 @@
+@media only screen and (max-width : 440px) {}
+@media only screen and (max-width : 640px) {
+    .carousel{
+        margin-left: 20px;
+
+    }
+
+    .carousel-btns{
+        width: 92% !important;
+        margin-left: 5px !important;
+
+    }
+}
+
 .carousel_container{
 }
 
@@ -19,18 +33,27 @@
     outline-style:none;
     background: white;
     border: 2px solid rgba(255,255,255,0.1);
+    transition: 0.5s;
+
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,efefef+100&1+0,0.4+100;White+to+Transparent */
+background: -moz-radial-gradient(center, ellipse cover, rgba(255,255,255,1) 0%, rgba(239,239,239,0.4) 100%); /* FF3.6-15 */
+background: -webkit-radial-gradient(center, ellipse cover, rgba(255,255,255,1) 0%,rgba(239,239,239,0.4) 100%); /* Chrome10-25,Safari5.1-6 */
+background: radial-gradient(ellipse at center, rgba(255,255,255,1) 0%,rgba(239,239,239,0.4) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#66efefef',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
 }
 
 .prevbtn:hover{
     color: blue;
     font-weight: 600;
     box-shadow: 0px 0px 0px 10px rgba(100,100,100,0.1);    
+    background: white;
 }
 
 .nextbtn:hover{
     color: blue;
     font-weight: 600;
     box-shadow: 0px 0px 0px 10px rgba(100,100,100,0.1);    
+    background: white;
 }
 
 .nextbtn{
@@ -45,6 +68,13 @@
     outline-style:none;
     background: white;
     border: 2px solid rgba(255,255,255,0.1);
+    transition: 0.5s;
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,efefef+100&1+0,0.4+100;White+to+Transparent */
+background: -moz-radial-gradient(center, ellipse cover, rgba(255,255,255,1) 0%, rgba(239,239,239,0.4) 100%); /* FF3.6-15 */
+background: -webkit-radial-gradient(center, ellipse cover, rgba(255,255,255,1) 0%,rgba(239,239,239,0.4) 100%); /* Chrome10-25,Safari5.1-6 */
+background: radial-gradient(ellipse at center, rgba(255,255,255,1) 0%,rgba(239,239,239,0.4) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#66efefef',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
 }
 
 .carousel-btns{
@@ -53,8 +83,10 @@
     margin-left: -15px;
     margin-top: 100px;
     z-index: 9;
+    opacity: 0.8;
 
 }
+
 
 .carousel{
     z-index: -999;

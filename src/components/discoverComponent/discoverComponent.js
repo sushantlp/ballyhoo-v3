@@ -2,7 +2,7 @@ import Carousel from '../carouselComponent/carouselComponent'
 import SlideCard from '../slideCardComponent/slideCardComponent'
 
 import React, { Component } from 'react';
-
+import './discoverComponent.css'
 
 export default class Discover extends Component{
     discover_items = [
@@ -15,7 +15,8 @@ export default class Discover extends Component{
     render(){
         return(<div className='discover_section'>
                     <h2 className='subtitle'>Discover</h2>
-                    <Carousel items={this.discover_items} lift/>
+                    <Carousel   items={this.discover_items} 
+                                lift className='discover_carousel'/>
                     <br/><br/>
                 </div>
             )

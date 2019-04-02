@@ -1,3 +1,17 @@
+@media only screen and (max-width : 440px) {}
+@media only screen and (max-width : 640px) {
+    .footer{
+        font-size: 0.8em;
+    }
+}
+
+.gp{
+    width: 160px;
+}
+
+.as{
+}
+
 .cities{
     text-align: left;
     line-height: 1.2em;

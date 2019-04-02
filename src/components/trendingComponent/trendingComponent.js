@@ -1,6 +1,6 @@
 import Carousel from '../carouselComponent/carouselComponent'
 import React, { Component } from 'react';
-
+import './trendingComponent.css'
 export default class Trending extends Component {
     trend_items = [
         <img src='http://bit.ly/2FG2kH9' alt='alt'/>,
@@ -12,7 +12,7 @@ export default class Trending extends Component {
     
     render(){
         return(
-           <div>
+           <div className='trending_section'>
                 <h2 className='subtitle'>Trending</h2>
                 <Carousel items={this.trend_items} style txt='Discover'/>
                 <br/><br/>

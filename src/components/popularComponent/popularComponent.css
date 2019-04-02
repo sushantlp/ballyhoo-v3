@@ -1,3 +1,19 @@
+@media only screen and (max-width : 440px) {}
+
+@media only screen and (max-width : 640px) {
+    .popular_section{
+        padding: 10px;
+    }
+
+    .tilecontainer{
+
+    }
+}
+
+.tilecontainer{
+  
+}
+
 .tiletext{
   padding: 5px;
   vertical-align: middle;
@@ -153,4 +169,3 @@
   filter: grayscale(0%);
   transform: scale(1.1);
   }
-

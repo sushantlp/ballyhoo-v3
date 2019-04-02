@@ -1,4 +1,10 @@
-@media only screen and (max-width : 440px) {}
+@media only screen and (max-width : 400px) {
+    .carousel{
+        margin-left: 60px !important;
+    }    
+
+}
+
 @media only screen and (max-width : 640px) {
     .carousel{
         margin-left: 20px;
@@ -8,7 +14,6 @@
     .carousel-btns{
         width: 92% !important;
         margin-left: 5px !important;
-
     }
 }
 

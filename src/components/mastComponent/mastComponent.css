@@ -1,5 +1,15 @@
-@media only screen and (max-width : 440px) {
+@media only screen and (max-width : 400px) {
+    .mast_search{
+        margin-top: 00px !important;
 
+        height: 100%;
+        display: block;
+    }
+
+    .searchanddd{
+        border: 1px sold blue !important;
+        background: blue;
+    }
 }
 
 @media only screen and (max-width : 640px) {
@@ -13,11 +23,9 @@
     }
 }
 
-
 .searchanddd{
     margin: 0 auto;
     margin-top: -25px;
     position: relative;
     width: 60%;
-
 }

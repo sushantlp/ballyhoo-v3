@@ -1,12 +1,7 @@
-.brandname{
-    padding: 5px;
-    height: 40%;
-}
 .nav_searchbar{
-    padding: 5px;
-    margin: 0 auto;
-    height: 50%;
+  margin-left:70px;
 }
+
 .nav_dropdown{
     height: 35px;
     font-size: 0.5em;
@@ -15,41 +10,46 @@
     color: #ddd;
     outline-style:none;
 }
+
 .nav_search{
     font-size: 0.5em;
     height: 35px;
-    width: 400px;
+    width: 65%;
     background: #555;
     color: white;
     border: 0px;
     border-radius: 5px;    
     text-align: center;
     outline-style:none;
+    margin:5px ;
 
 }
+
 .nav_search::placeholder { color: #ddd; }
+
 .navbar{
-  height: 70px;
-  padding: 10px;
-  vertical-align: middle;
+  height: 80px;
+  padding: 5px;
   background: #000;
   color: #fff;
   font-family: 'Bangers', cursive;
   font-size: 1.8em;
 }
+
 .navbar h1{
   font-size: 1.2em;
 }
+
 .nav_text{
   font-family: helvetica;
-  font-size: 0.5em;
+  font-size: 0.4em;
   margin-top: 5px;
 }
+
 .nav_menu{
   color: white;
   font-size: 1.8em;
   background: black;
-  height: 100%;
 }
 
 .nav_menu .column{
@@ -61,17 +61,20 @@
   font-size: 0.5em;
   display: inline-block;
   margin-right: 20px;
-  transition: 0.5px;
+  transition: 0.8s;
 }
+
 .nav_menu_text:hover{
+  border-radius: 50px;
   color: black;
-  padding: 5px;
+  padding: 3px;
   cursor: pointer;
-    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ff5a5f+0,ff5a5f+100&1+0,0.9+100 */
-    background: -moz-linear-gradient(top, rgba(255,90,95,1) 0%, rgba(255,90,95,0.9) 100%); /* FF3.6-15 */
-    background: -webkit-linear-gradient(top, rgba(255,90,95,1) 0%,rgba(255,90,95,0.9) 100%); /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(to bottom, rgba(255,90,95,1) 0%,rgba(255,90,95,0.9) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff5a5f', endColorstr='#e6ff5a5f',GradientType=0 ); /* IE6-9 */  
+
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ff5a5f+0,ff5a5f+100&1+0,0.9+100 */
+  background: -moz-linear-gradient(top, rgba(255,90,95,1) 0%, rgba(255,90,95,0.9) 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, rgba(255,90,95,1) 0%,rgba(255,90,95,0.9) 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, rgba(255,90,95,1) 0%,rgba(255,90,95,0.9) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff5a5f', endColorstr='#e6ff5a5f',GradientType=0 ); /* IE6-9 */  
 }
 
 .nav_menu_right{
@@ -79,4 +82,13 @@
   display: inline-block;
   margin-top: 15px;
   float: right;  
+}
+
+.signin{
+  line-height: 0;
+  margin-top: 10px;
+}
+
+.hamburger{
+  margin-top: 10px;
 }

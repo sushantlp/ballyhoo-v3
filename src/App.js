@@ -6,6 +6,7 @@ import Trending from './components/trendingComponent/trendingComponent'
 import Footer from './components/footerComponent/footerComponent'
 import Mast from './components/mastComponent/mastComponent'
 import Navbar from './components/navbarComponent/navbarComponent'
+
 import './app.css'
 
 class App extends Component {

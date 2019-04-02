@@ -1,11 +1,27 @@
+@media only screen and (max-width : 440px) {
+
+
+}
+
+@media only screen and (max-width : 640px) {
+    .searchcon {
+    }
+
+    .searchbtn{
+        float: right;
+        max-width: 80px;
+    }
+
+}
+
 .search{
     font-size: 1em;    
     transition: 0.5s;
-    height:100%;
     text-align: center;
     outline-style:none;
-    width: 400px;
+    width: 92%;
     border: 0;
+
 }
 
 .search:focus{

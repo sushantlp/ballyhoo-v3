@@ -1,3 +1,27 @@
+@media only screen and (max-width : 440px) {
+  .nav_search{
+    display: none;
+  }
+  .nav_dropdown{
+    display: none;
+  }
+  .signin .nav_text{
+    display: none;
+  }    
+  .signin{
+    display: none;
+  }  
+}
+
+@media only screen and (max-width : 640px) {
+  .signin .nav_text{
+    display: none;
+  }    
+  .signin{
+    font-size: 1.2em;
+  }
+}
+
 .nav_searchbar{
   margin-left:70px;
 }
@@ -42,8 +66,10 @@
 
 .nav_text{
   font-family: helvetica;
-  font-size: 0.4em;
-  margin-top: 5px;
+  font-size: 0.5em;
+  margin: 0 auto;
+  margin-top: 10px;
+
 }
 
 .nav_menu{
@@ -91,4 +117,5 @@
 
 .hamburger{
   margin-top: 10px;
+  color: white;
 }

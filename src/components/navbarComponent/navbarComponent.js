@@ -30,8 +30,10 @@ export default class Navbar extends React.Component{
                         <p className='nav_text'>Sign in</p>
                     </div>
                     <div className='column is-1 hamburger'>
-                        <a href={this.showmenu} class="icon" onclick="myFunction()">
-                            <i class="fa fa-bars"></i>                        
+                        <a  href={this.showmenu} 
+                            class="icon" 
+                            onclick="myFunction()">
+                            <i style={{"color":"white"}} class="fa fa-bars"></i>                        
                         </a>
                     </div>
                 </div>

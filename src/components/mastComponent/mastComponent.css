@@ -1,12 +1,22 @@
-.mast_search{
-  transition: 1s;
-  margin: 0 auto;
-  margin-top: -20px;
+@media only screen and (max-width : 440px) {
+
 }
 
+@media only screen and (max-width : 640px) {
+    .mast_search{
+
+    }
+
+    .searchanddd{
+        min-width: 600px;
+    }
+}
+
+
 .searchanddd{
-    width: 60%;
     margin: 0 auto;
     margin-top: -25px;
     position: relative;
+    width: 60%;
+
 }

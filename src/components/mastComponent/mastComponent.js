@@ -14,11 +14,14 @@ export default class Mast extends Component {
         return(
             <div className='mast_search'>
               <Carousel className='mast' items={this.mast_items} Mast/>
+              
               <div className='searchanddd'>
                 <Search dd options={this.props.options} ph="Search Locality"/>
                   &nbsp;&nbsp;&nbsp;&nbsp;
+
                 <Search ph="Search Collections"/>
                   &nbsp;&nbsp;&nbsp;&nbsp;
+
                 <button className="searchbtn" type="button">Search</button>
               </div>
             </div>

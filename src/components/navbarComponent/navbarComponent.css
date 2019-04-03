@@ -1,6 +1,7 @@
-@media only screen and (max-width : 440px) {
+@media only screen and (max-width : 426px) {
   .nav_search{
-    display: none;
+    width: 75% !important;
+    margin-left: 20px !important;
   }
   .nav_dropdown{
     display: none;
@@ -9,8 +10,12 @@
     display: none;
   }    
   .signin{
-    display: none;
+    margin-right: 15px;
+    transform: scale(0.6);
   }  
+  .hamburger{
+    transform: scale(0.7);
+  }
 }
 
 @media only screen and (max-width : 640px) {

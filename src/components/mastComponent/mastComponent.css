@@ -1,11 +1,11 @@
-@media only screen and (max-width : 400px) {
+@media only screen and (max-width : 426px) {
     .mast_search{
         height: 250px;
-        z-index: -99 !important;
     }
 
     .searchanddd{
         display: inline;
+        min-width: 400px !important;
     }
 }
 

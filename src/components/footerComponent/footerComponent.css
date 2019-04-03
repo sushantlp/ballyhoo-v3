@@ -1,6 +1,6 @@
-@media only screen and (max-width : 400px) {
+@media only screen and (max-width : 426px) {
     .footer{
-        font-size: 0.5em !important;
+        font-size: 0.65em !important;
     }
 }
 @media only screen and (max-width : 640px) {

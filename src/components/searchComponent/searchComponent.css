@@ -3,6 +3,10 @@
         width: 40% !important;
     }
 
+    .searchbtn{
+        position: relative;
+    }
+
     .search{
         width: 80% !important;
     }
@@ -73,7 +77,6 @@
 }
 
 .searchbtn{
-    z-index: 1010;
     height: 47px;
     border-radius:5px;
     font-size: 1em;

@@ -1,7 +1,12 @@
 @media only screen and (max-width : 400px) {
     .searchcon{
-        width: 45% !important;
+        width: 40% !important;
     }
+
+    .search{
+        width: 80% !important;
+    }
+
 }
 
 @media only screen and (max-width : 640px) {

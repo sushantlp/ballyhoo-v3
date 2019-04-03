@@ -12,8 +12,10 @@ export default class Mast extends Component {
     
     render(){
         return(
+          <div>
             <div className='mast_search'>
               <Carousel className='mast' items={this.mast_items} Mast/>
+            </div>
               
               <div className='searchanddd'>
                 <Search dd options={this.props.options} ph="Search Locality"/>

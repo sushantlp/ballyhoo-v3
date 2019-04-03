@@ -16,15 +16,16 @@ export default class Mast extends Component {
             <div className='mast_search'>
               <Carousel className='mast' items={this.mast_items} Mast/>
             </div>
-              
-              <div className='searchanddd'>
-              
-                <Search dd options={this.props.options} ph="Search Locality"/>
-                  &nbsp;&nbsp;&nbsp;&nbsp;
-                <Search ph="Search Collections"/>
-                  &nbsp;&nbsp;&nbsp;&nbsp;
-                <button className="searchbtn" type="button">Search</button>
-
+              <div id='searchbar' className='columns is-mobile searchanddd'>
+                <div className='column is-4 ' >
+                  <Search dd options={this.props.options} ph="Search Locality"/>
+                </div>
+                <div className='column'>  
+                  <Search ph="Search Collections"/>
+                </div>
+                <div className='column is-3' >
+                    <button className="searchbtn" type="button">Search</button>
+                </div>
               </div>
             </div>
             )

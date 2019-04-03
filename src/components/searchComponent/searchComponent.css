@@ -1,20 +1,33 @@
 @media only screen and (max-width : 426px) {
+    #searchbar{
+        width: 91%;
+        margin: 0 auto;
+        margin-top: -10px !important; 
+        margin-right: 0px !important;
+    }
+
+    .ddcon{
+        width: 125% !important;    
+        margin-right: -20px !important;
+        height: 39px;
+    }
+
     .searchcon{
         margin-top: 10px;
-        width: 54% !important;
+        margin-right: -18px;
         font-size: 0.7em;
     }
 
     .searchbtn{
         margin-top: 10px;
-        position: relative;
         font-size: 0.7em !important;
-        width: 50px;
         height: 40px !important;
     }
 
     .ddcon{
+     margin-top: 10px !important;
      font-size: 0.7em;   
+     width: 100%;
     }
 
     .search{
@@ -24,10 +37,6 @@
 }
 
 @media only screen and (max-width : 640px) {
-    .searchbtn{
-        float: right;
-        max-width: 80px;
-    }
 }
 
 .search{
@@ -35,17 +44,19 @@
     transition: 0.5s;
     text-align: center;
     outline-style:none;
-    width: 93%;
     border: 0;
 }
 
 .search:focus{
 }
 
-.ddcon{    
+.ddcon{
+
     box-shadow: 0 5px 4px 0 rgba(0,0,0,.1);
     border: 1px solid rgba(200,0,200,.1);
     display: inline-block;  
+    float: right;
+    margin:0 auto;
     outline-style:none;
     text-align: center;
     background: white;
@@ -54,14 +65,12 @@
 }
 
 .searchcon{
-    width: 58%;
     border-radius: 5px;
     padding:10px;
     background: #fff;
     box-shadow: 0 5px 4px 0 rgba(0,0,0,.1);
     border: 1px solid rgba(200,0,200,.1);
     outline-style:none;
-    display: inline-block;
 }
 
 .sicon{

@@ -13,6 +13,7 @@ export default class Search extends React.Component{
                     <div className='ddcon'>
                         <i className="ddicon fas fa-map-marker-alt"></i>
                         <select className='dropdown'>{locations}</select> 
+                        
                     </div>
                 )
         }

@@ -1,11 +1,6 @@
 @media only screen and (max-width : 426px) {
     .mast_search{
-        height: 250px;
-    }
-
-    .searchanddd{
-        display: inline;
-        min-width: 400px !important;
+        height: 300px;
     }
 }
 
@@ -13,15 +8,14 @@
     .mast_search{
         margin-top: -100px;
     }
-    .searchanddd{
-        min-width: 600px;
-        margin-top: -45px !important;
+
+    #searchbar{
+        margin-top: -60px !important;
     }
 }
 
 .searchanddd{
-    margin: 0 auto;
-    margin-top: -25px;
+    margin-top: -40px !important;
+    z-index: 999 !important;
     position: relative;
-    width: 45%;
 }

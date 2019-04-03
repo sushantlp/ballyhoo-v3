@@ -5,9 +5,9 @@ import './mastComponent.css'
 
 export default class Mast extends Component {
     mast_items = [
-      <div className='mast'> <img src='http://bit.ly/2FA5s7I' alt='alt' /></div>,
-      <div className='mast'> <img src='https://bit.ly/2FGdvRm' alt='alt' /></div>,
-      <div className='mast'> <img src='https://bit.ly/2uuMNoy' alt='alt' /></div>
+      <div className='mast1'/>,
+      <div className='mast2'/>,
+      <div className='mast3'/>
     ]
     
     render(){

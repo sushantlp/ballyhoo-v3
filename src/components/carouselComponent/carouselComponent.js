@@ -25,10 +25,10 @@ export default class Carousel extends React.Component {
           <AliceCarousel
             dotsDisabled={true}
             buttonsDisabled={true}
-            items={this.props.items}  
+            items={this.state.galleryItems}  
             responsive={{ 1024: {items:1} }}   
             infinite={true}
-            autoPlay={false}
+            autoPlay={true}
             duration={2500}
             />
           </div>
@@ -38,7 +38,7 @@ export default class Carousel extends React.Component {
     return (
     <div className='carousel_container'>
       <div className='carousel-btns'>
-        <button className='prevbtn' onClick={() => this.Carousel._slidePrev()}>⮃</button>
+        <button className='prevbtn' onClick={() => this.Carousel._slidePrev()}>&#11139;</button>
         <button className='nextbtn' onClick={() => this.Carousel._slideNext()}>⮁</button>    
       </div>
       <div className='carousel'>

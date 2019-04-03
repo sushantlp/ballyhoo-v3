@@ -1,7 +1,4 @@
 @media only screen and (max-width : 426px) {
-    .mast_search{
-        height: 300px;
-    }
 }
 
 @media only screen and (max-width : 640px) {
@@ -18,4 +15,22 @@
     margin-top: -40px !important;
     z-index: 999 !important;
     position: relative;
+}
+
+.mast1{
+    background-size: cover;
+    background-image: url('http://bit.ly/2FA5s7I');    
+    height: 435px;
+}
+
+.mast2{
+    background-image: url('https://bit.ly/2FGdvRm');
+    background-size: cover;
+    height: 435px;
+}
+
+.mast3{
+    background-image: url('https://bit.ly/2uuMNoy');
+    background-size: cover;
+    height: 435px;
 }

@@ -1,14 +1,10 @@
 @media only screen and (max-width : 426px) {
-    .carousel{
-
-    }    
 
 }
 
 @media only screen and (max-width : 640px) {
     .carousel{
         margin-left: 20px;
-
     }
 
     .carousel-btns{
@@ -91,7 +87,6 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
     opacity: 0.8;
 
 }
-
 
 .carousel{
     z-index: -999;

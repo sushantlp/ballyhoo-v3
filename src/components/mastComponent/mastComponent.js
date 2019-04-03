@@ -18,13 +18,13 @@ export default class Mast extends Component {
             </div>
               
               <div className='searchanddd'>
+              
                 <Search dd options={this.props.options} ph="Search Locality"/>
                   &nbsp;&nbsp;&nbsp;&nbsp;
-
                 <Search ph="Search Collections"/>
                   &nbsp;&nbsp;&nbsp;&nbsp;
-
                 <button className="searchbtn" type="button">Search</button>
+
               </div>
             </div>
             )

@@ -73,6 +73,7 @@
 }
 
 .searchbtn{
+    z-index: 1010;
     height: 47px;
     border-radius:5px;
     font-size: 1em;

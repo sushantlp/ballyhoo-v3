@@ -19,27 +19,35 @@ export default  class List extends Component {
     render() {
         return (
             <div className='listcontainer columns'>
-
-                <div className='column is-2'>3</div>
+                <div className='column is-2'>
+                </div>
                 <div className='column is-8'>
-                <h2 className='subtitle'>Merchant List</h2>
-                <nav class="breadcrumb" aria-label="breadcrumbs">
-                  <ul>
-                    <li><a href="/">Home</a></li>
-                    <li><a href="#">Discover</a></li>
-                    <li class="is-active"><a href="#">Merchants</a></li>
-                  </ul>
-                </nav>
+                <section style={{"marginLeft":"10px"}}>
+                    <h2 className='subtitle'>Merchant List</h2>
+                    <nav class="breadcrumb" aria-label="breadcrumbs">
+                      <ul>
+                        <li><a href="/">Home</a></li>
+                        <li><a href="#">Discover</a></li>
+                        <li class="is-active"><a href="#">Merchants</a></li>
+                      </ul>
+                    </nav>
+                </section>
                     {this.items.map((i)=> 
-                        <div className='card carcard cardinline'>{i}
+                        <div className='card mcard cardinline'>{i}
                             <p>&nbsp;Merchant</p>
                             <p style={{"fontSize":"0.8em"}}>&nbsp;Locality<br/></p>
+                            <p style={{"fontSize":"0.8em"}}>&nbsp;Info<br/></p>
+                            <p style={{"fontSize":"0.6em"}} className='hashtag tag is-success'>#Hashtag</p>
+                            <p style={{"fontSize":"0.6em"}} className='hashtag tag is-success'>#Hashtag</p>
+                            <p style={{"fontSize":"0.6em"}} className='hashtag tag is-success'>#Hashtag</p>
+                            <br/>
                             <p style={{"fontSize":"0.6em"}} className='tag is-warning'>Rating: 5.5</p>
 
                         </div>
                     )}
                 </div>
-                <div className='column is-2'>3</div>
+                <div className='column is-2'>
+                </div>
             </div>
         );
     }

@@ -3,10 +3,23 @@
 }
 
 
+
+.mcard{
+    margin:10px;    
+    width: 15em;
+    height: 17.6em;
+    padding: 5px;
+}
+
 .cardinline{
     display: inline-block;
 }
 
 .breadcrumb{
     margin-top: -25px;
+}
+
+.hashtag{
+    color: black !important;
+    margin-right: 5px;
 }

@@ -4,7 +4,6 @@ import Popular from '../popularComponent/popularComponent'
 import Discover from '../discoverComponent/discoverComponent'
 import Featured from '../featuredComponent/featuredComponent'
 import Trending from '../trendingComponent/trendingComponent'
-import Footer from '../footerComponent/footerComponent'
 import Mast from '../mastComponent/mastComponent'
 
 
@@ -28,7 +27,6 @@ export default class Index extends Component {
           <Popular />
           <Trending />        
         </div>
-        <Footer />    
       </div>
       );
   }

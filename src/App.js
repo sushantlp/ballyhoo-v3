@@ -6,6 +6,7 @@ import './app.css'
 import Index from './components/indexComponent/indexComponent';
 import List from './components/listComponent/listComponent';
 import Navbar from './components/navbarComponent/navbarComponent'
+import Footer from './components/footerComponent/footerComponent'
 
 class App extends Component {
   
@@ -24,6 +25,7 @@ class App extends Component {
         <Navbar options={this.locality_options}/>
         <Route path="/" exact component={Index} />
         <Route path="/list" exact component={List}/>
+        <Footer />    
       </Router>
       );
   }

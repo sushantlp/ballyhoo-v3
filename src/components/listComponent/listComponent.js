@@ -21,14 +21,14 @@ export default  class List extends Component {
             <div className='listcontainer columns'>
                 <div className='column is-2'>
                 </div>
-                <div className='column is-8'>
+                <div style={{"marginLeft":"15px"}} className='column is-8'>
                 <section style={{"marginLeft":"10px"}}>
                     <h2 className='subtitle'>Merchant List</h2>
                     <nav class="breadcrumb" aria-label="breadcrumbs">
                       <ul>
                         <li><a href="/">Home</a></li>
-                        <li><a href="#">Discover</a></li>
-                        <li class="is-active"><a href="#">Merchants</a></li>
+                        <li><a href="/">Discover</a></li>
+                        <li class="is-active"><a href="/">Merchants</a></li>
                       </ul>
                     </nav>
                 </section>
@@ -37,10 +37,9 @@ export default  class List extends Component {
                             <p>&nbsp;Merchant</p>
                             <p style={{"fontSize":"0.8em"}}>&nbsp;Locality<br/></p>
                             <p style={{"fontSize":"0.8em"}}>&nbsp;Info<br/></p>
-                            <p style={{"fontSize":"0.6em"}} className='hashtag tag is-success'>#Hashtag</p>
-                            <p style={{"fontSize":"0.6em"}} className='hashtag tag is-success'>#Hashtag</p>
-                            <p style={{"fontSize":"0.6em"}} className='hashtag tag is-success'>#Hashtag</p>
-                            <br/>
+                            <p style={{"fontSize":"0.6em"}} className='hashtag tag is-info'>#Hashtag</p>
+                            <p style={{"fontSize":"0.6em"}} className='hashtag tag is-info'>#Hashtag</p>
+                            <p style={{"fontSize":"0.6em"}} className='hashtag tag is-info'>#Hashtag</p><br/>
                             <p style={{"fontSize":"0.6em"}} className='tag is-warning'>Rating: 5.5</p>
 
                         </div>

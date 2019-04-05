@@ -16,7 +16,8 @@ export default class Carousel extends React.Component {
       ))
   }
 
-  render() { 
+  render() {
+   
     const isMast = this.props.Mast;
     
     if (isMast) {

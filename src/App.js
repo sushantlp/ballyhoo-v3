@@ -1,13 +1,11 @@
 import React, { Component } from 'react'
-import Popular from './components/popularComponent/popularComponent'
-import Discover from './components/discoverComponent/discoverComponent'
-import Featured from './components/featuredComponent/featuredComponent'
-import Trending from './components/trendingComponent/trendingComponent'
-import Footer from './components/footerComponent/footerComponent'
-import Mast from './components/mastComponent/mastComponent'
-import Navbar from './components/navbarComponent/navbarComponent'
+import {Route, BrowserRouter as Router} from "react-router-dom";
 
 import './app.css'
+
+import Index from './components/indexComponent/indexComponent';
+import List from './components/listComponent/listComponent';
+import Navbar from './components/navbarComponent/navbarComponent'
 
 class App extends Component {
   
@@ -22,17 +20,11 @@ class App extends Component {
   render() 
   {
     return (
-      <div>
+      <Router> 
         <Navbar options={this.locality_options}/>
-        <Mast options={this.locality_options}/>
-        <div className='container'>
-          <Discover />
-          <Featured />
-          <Popular />
-          <Trending />        
-        </div>
-        <Footer />    
-      </div>
+        <Route path="/" exact component={Index} />
+        <Route path="/list" exact component={List}/>
+      </Router>
       );
   }
 }

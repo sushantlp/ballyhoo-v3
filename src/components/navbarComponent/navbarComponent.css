@@ -1,3 +1,6 @@
+
+@import url('https://fonts.googleapis.com/css?family=Abril+Fatface');
+
 @media only screen and (max-width : 426px) {
   .nav_search{
     width: 75% !important;
@@ -25,6 +28,13 @@
   .signin{
     font-size: 1.2em;
   }
+}
+
+.brandname{
+  font-family: 'Abril Fatface', cursive;
+  font-size: 0.8em;
+  margin-top: 10px;
+
 }
 
 .nav_searchbar{
@@ -56,12 +66,11 @@
 .nav_search::placeholder { color: #ddd; }
 
 .navbar{
+  font-size: 1.8em;
   height: 80px;
   padding: 5px;
   background: #000;
   color: #fff;
-  font-family: 'Bangers', cursive;
-  font-size: 1.8em;
 }
 
 .navbar h1{

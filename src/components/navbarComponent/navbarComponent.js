@@ -16,7 +16,7 @@ export default class Navbar extends React.Component{
             <div>
                 <div className='navbar has-text-centered columns is-mobile'>
                     <div className='brandname column is-1'>
-                        <h1>BALLYHOO</h1>
+                        <h1>Ballyhoo</h1>
                     </div>
                     <div className='nav_searchbar column'>
                        <select className='nav_dropdown'>

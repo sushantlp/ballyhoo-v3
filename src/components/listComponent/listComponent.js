@@ -23,11 +23,18 @@ export default  class List extends Component {
                 <div className='column is-2'>3</div>
                 <div className='column is-8'>
                 <h2 className='subtitle'>Merchant List</h2>
-                
+                <nav class="breadcrumb" aria-label="breadcrumbs">
+                  <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="#">Discover</a></li>
+                    <li class="is-active"><a href="#">Merchants</a></li>
+                  </ul>
+                </nav>
                     {this.items.map((i)=> 
                         <div className='card carcard cardinline'>{i}
-                            <p>&nbsp;Hello</p>
-                            <p className='tag is-warning'>Rating: 5.5</p>
+                            <p>&nbsp;Merchant</p>
+                            <p style={{"fontSize":"0.8em"}}>&nbsp;Locality<br/></p>
+                            <p style={{"fontSize":"0.6em"}} className='tag is-warning'>Rating: 5.5</p>
 
                         </div>
                     )}

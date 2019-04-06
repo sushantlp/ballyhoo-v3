@@ -7,7 +7,7 @@
 .mcard{
     margin:10px;    
     width: 15em;
-    height: 17.6em;
+    height: 21.5em;
     padding: 5px;
 }
 
@@ -23,4 +23,13 @@
     color: black !important;
     margin-right: 5px;
     background: pink !important;
+}
+
+.hashtags{
+    margin-top: 10px;
+}
+
+.pnb{
+    margin-top: -20px;
+    font-size: 0.8em;
 }

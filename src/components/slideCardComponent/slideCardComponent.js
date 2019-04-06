@@ -7,7 +7,7 @@ export default class SlideCard extends React.Component{
     return(
       <div className='slantCard card animated'>
         <div className='figure slant-rotate'>
-          <img src={this.props.img} alt={this.props.alt}/>
+          <img src={this.props.img}  width={this.props.width} alt={this.props.alt}/>
         </div>
         <div className='bottom'>
           <p>Hello World</p>

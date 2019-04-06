@@ -2,12 +2,10 @@
     margin-top: 10px;
 }
 
-
-
 .mcard{
     margin:10px;    
-    width: 15em;
-    height: 21.5em;
+    width: 16em;
+    height: 22em;
     padding: 5px;
 }
 
@@ -32,4 +30,8 @@
 .pnb{
     margin-top: -20px;
     font-size: 0.8em;
+}
+
+.three{
+    margin-left: -15px;
 }

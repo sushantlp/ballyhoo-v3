@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-
 import Popular from '../popularComponent/popularComponent'
 import Discover from '../discoverComponent/discoverComponent'
 import Featured from '../featuredComponent/featuredComponent'
@@ -8,13 +7,7 @@ import Mast from '../mastComponent/mastComponent'
 
 
 export default class Index extends Component {
-  locality_options = [
-      'Bengaluru',
-      'Chennai',
-      'Kolkata',
-      'New Delhi',
-      'Lucknow'
-  ]
+  locality_options = ['Bengaluru','Chennai','Kolkata','New Delhi','Lucknow']
   
   render() 
   {

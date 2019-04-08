@@ -38,7 +38,7 @@ export default class Carousel extends React.Component {
 
     return (
     <div className='carousel_container'>
-      <div className='carousel-btns'>
+      <div className={this.props.list ? 'carousel-btns-list' :'carousel-btns'}>
         <button className='prevbtn' onClick={() => this.Carousel._slidePrev()}>&#11139;</button>
         <button className='nextbtn' onClick={() => this.Carousel._slideNext()}>⮁</button>    
       </div>

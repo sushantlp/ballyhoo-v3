@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import './listComponent.css'
 // import SlideCard from '../slideCardComponent/slideCardComponent'
+import Carousel from '../carouselComponent/carouselComponent'
+
 import { Link } from "react-router-dom";
 
 export default  class List extends Component {
@@ -10,42 +12,24 @@ export default  class List extends Component {
         'http://bit.ly/2FAUIGc',
         'http://bit.ly/2FzZmnM',
         'http://bit.ly/2FA5xIy',
-        'http://bit.ly/2U4qwwZ',
         'http://bit.ly/2U0MtNs',
         'http://bit.ly/2FAUIGc',
         'http://bit.ly/2FzZmnM',
         'http://bit.ly/2FA5xIy'
     ]
 
+    featured_items = [
+        <img src='http://bit.ly/2U4qwwZ' alt='alt'/>,
+        <img src='http://bit.ly/2U0MtNs' alt='alt'/>,
+        <img src='http://bit.ly/2FAUIGc' alt='alt'/>,
+        <img src='http://bit.ly/2FzZmnM' alt='alt'/>,
+        <img src='http://bit.ly/2FA5xIy' alt='alt'/>
+    ]
+
     render() {
         return (
-            <div className='listcontainer columns is-mobile'>
-                <div className='column one is-2'><br/><br/>
-                    <h2 className='subtitle'>Stories</h2>
-
-                    <img src='http://bit.ly/2FA5xIy' alt='alt'/>
-                    <p>Similar Title</p>
-                    <p style={{"fontSize":"0.8em"}}>Offer Title<br/></p>
-                    <hr/>
-                    <img src='http://bit.ly/2FAH4Tn' alt='alt'/>
-                    <p>Similar Title</p>
-                    <p style={{"fontSize":"0.8em"}}>Offer Title<br/></p>
-                    <hr/>
-                    <img src='http://bit.ly/2Fzmvqf' alt='alt'/>
-                    <p>Similar Title</p>
-                    <p style={{"fontSize":"0.8em"}}>Offer Title<br/></p>
-                    <hr/>
-                    <img src='https://bit.ly/2U2yExZ' alt='alt'/>
-                    <p>Similar Title</p>
-                    <p style={{"fontSize":"0.8em"}}>Offer Title<br/></p>
-                    <hr/>
-                    <img src='http://bit.ly/2FAhVbn' alt='alt'/>
-                    <p>Similar Title</p>
-                    <p style={{"fontSize":"0.8em"}}>Offer Title<br/></p>
-                    <hr/>
-
-
-                </div>
+            <div className='listcontainer'>
+            <div className='columns'>
                 <div className='column two is-8'>
                     <section style={{"marginLeft":"10px"}}>
                         <h2 className='subtitle'>Merchant List</h2>
@@ -88,25 +72,23 @@ export default  class List extends Component {
                             </div>
                         </div>
                     )}
-
                </div>
-
-                <div className='column is-2 three'><br/><br/>
+                <div className='column three is-3'><br/><br/>
                     <p style={{"fontSize":"0.8em"}}>Kowloon fluidity math--ware human-space semiotics tanto pistol corporation bicycle grenade realism camera hotdog.<br/><br/></p>
                     {/*<SlideCard img='http://bit.ly/2FAH4Tn' width={265} alt='alt'/><br/>*/}
                     <img src='http://bit.ly/2FAhVbn' alt='alt'/>
                     <p>Similar Title</p>
                     <p style={{"fontSize":"0.8em"}}>Offer Title<br/></p>
                     <hr/>
-                    <p style={{"fontSize":"0.8em"}}>Sunglasses math-corrupted A.I. nano-neon rifle.<br/><br/> Jeans sensory apophenia urban claymore mine fluidity sprawl San Francisco convenience store.<br/><br/> J-pop meta-refrigerator sprawl shoes soul-delay hotdog tiger-team girl drone systema systemic rifle industrial grade singularity ablative.<br/><br/> Pre-bicycle modem 8-bit receding beef noodles vinyl smart-systemic footage realism boy.<br/><br/> Denim jeans semiotics man office sentient Legba warehouse 3D-printed engine monofilament artisanal nodal point apophenia tower courier. Offer Title<br/></p>
-                     <img src='http://bit.ly/2FA5xIy' alt='alt'/>
+                    <p style={{"fontSize":"0.8em"}}>Sunglasses math-corrupted A.I. nano-neon rifle.<br/><br/> Jeans sensory apophenia urban claymore mine fluidity sprawl San Francisco convenience store.<br/><br/> J-pop meta-refrigerator sprawl shoes soul-delay hotdog tiger-team girl drone systema systemic rifle industrial grade singularity ablative.<br/><br/> Pre-bicycle modem 8-bit receding beef noodles vinyl smart-systemic footage realism boy.<br/><br/> Denim jeans semiotics man office sentient Legba warehouse 3D-printed engine monofilament artisanal nodal point apophenia tower courier. Offer Title<br/><br/></p>
+                     <img src='http://bit.ly/2OYxu10' alt='alt'/>
                     <p>Similar Title</p>
                     <p style={{"fontSize":"0.8em"}}>Offer Title<br/></p>
                     <hr/>
-                   
-
                 </div>
             </div>
+            <Carousel items={this.featured_items} style list txt='Stories' className='carousel_container'/>
+        </div>
         );
     }
 }

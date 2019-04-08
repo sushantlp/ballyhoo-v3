@@ -13,9 +13,6 @@
     }
 }
 
-.carousel_container{
-}
-
 .carcard{
     margin:10px;    
     width: 15em;
@@ -35,6 +32,7 @@
     background: white;
     border: 2px solid rgba(255,255,255,0.1);
     transition: 0.5s;
+
 
 /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,efefef+100&1+0,0.4+100;White+to+Transparent */
 background: -moz-radial-gradient(center, ellipse cover, rgba(255,255,255,1) 0%, rgba(239,239,239,0.4) 100%); /* FF3.6-15 */
@@ -80,12 +78,20 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
 
 .carousel-btns{
     position: absolute;
-    width: 100%;
+    width: 97%;
     margin-left: -15px;
     margin-top: 100px;
     z-index: 9;
     opacity: 0.8;
+}
 
+.carousel-btns-list{
+    position: absolute;
+    width: 95%;
+    margin-left: -15px;
+    margin-top: 100px;
+    z-index: 9;
+    opacity: 0.8;
 }
 
 .carousel{

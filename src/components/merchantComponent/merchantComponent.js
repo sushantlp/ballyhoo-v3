@@ -3,14 +3,12 @@ import { Tab, Tabs, TabList } from 'react-tabs';
 import "react-tabs/style/react-tabs.css";
 import './merchantComponent.css';
 
-
 class Details extends Component{
     render(){
         const style = {
           backgroundImage: "url("+this.props.image+")",
           backgroundSize: "cover"
         }
-
         return(
             <div className='tabcontent'>
                 <h2 className='subtitle'>Details</h2>
@@ -24,13 +22,13 @@ class Details extends Component{
                 <div className='columns'>
                     <div className='overview column is-3'>
                         <Popularity pop='57%'/>&nbsp;
-                        <Rating />
-                        <Ftype/>
+                        <Rating />&nbsp;
+                        <Ftype/>&nbsp;
                         <div className='tag is-primary'>
                             <p>
                                 Cuisine: Continental
                             </p>
-                        </div>
+                        </div>&nbsp;
                         <div className='tag is-success'>
                             <p>
                                 <i class="fas fa-rupee-sign"></i> 1000 onwards
@@ -45,6 +43,7 @@ class Details extends Component{
             )
     }
 }
+
 class Popularity extends Component {
     render(){
         return (
@@ -56,6 +55,7 @@ class Popularity extends Component {
             )        
     }
 }
+
 class Ftype extends Component {
     render(){
         return (
@@ -68,6 +68,7 @@ class Ftype extends Component {
             )        
     }
 }
+
 class Rating extends Component{
     render(){
         return (
@@ -85,26 +86,31 @@ class Rating extends Component{
             )        
     }
 }
+
 class Packages extends Component{
     render(){
         return(
             <div className='tabcontent'>
                 <h2 className='subtitle'>Packages</h2>
-                <div className='columns is-mobile'>
-                    <div className='column'>
+                <div className='columns is-mobile' style={{"margin":"1px"}}>
+                    <div className='column' style={{"background":"#ffa"}}>
                         Platinum
-                        <span>
+                        <img src='http://bit.ly/2X00Z53' className='ui fluid image' alt='alt'/>
+                        <span><br/>
                         Uplink-space soul-delay boy drone warehouse tube camera tower faded dolphin chrome spook. Geodesic tube corrupted pre-urban beef noodles A.I. stimulate motion tanto cyber-sprawl. Tokyo Legba free-market systema pistol receding disposable sunglasses grenade smart-San Francisco. Sensory fetishism artisanal beef noodles ablative silent voodoo god wristwatch futurity BASE jump sub-orbital vehicle. Numinous-space cardboard semiotics singularity systema meta-pistol ablative fetishism realism faded military-grade assassin camera. 
                         </span>
                     </div>
-                    <div className='column' style={{"background":"yellow"}}>
+                    <div className='column' style={{"background":"gold"}}>
                         Gold
-                        <span>
+                        <img src='http://bit.ly/2I9KAHV' className='ui fluid image' alt='alt'/>
+                        <span><br/>
                         Uplink-space soul-delay boy drone warehouse tube camera tower faded dolphin chrome spook. Geodesic tube corrupted pre-urban beef noodles A.I. stimulate motion tanto cyber-sprawl. Tokyo Legba free-market systema pistol receding disposable sunglasses grenade smart-San Francisco. Sensory fetishism artisanal beef noodles ablative silent voodoo god wristwatch futurity BASE jump sub-orbital vehicle. Numinous-space cardboard semiotics singularity systema meta-pistol ablative fetishism realism faded military-grade assassin camera. 
                         </span>
                     </div>
-                    <div className='column'>
-                        <span>
+                    <div className='column' style={{"background":"silver"}}>
+                        Silver
+                        <img src='http://bit.ly/2Ibbq2v' className='ui fluid image' alt='alt'/>
+                        <span><br/>
                         Uplink-space soul-delay boy drone warehouse tube camera tower faded dolphin chrome spook. Geodesic tube corrupted pre-urban beef noodles A.I. stimulate motion tanto cyber-sprawl. Tokyo Legba free-market systema pistol receding disposable sunglasses grenade smart-San Francisco. Sensory fetishism artisanal beef noodles ablative silent voodoo god wristwatch futurity BASE jump sub-orbital vehicle. Numinous-space cardboard semiotics singularity systema meta-pistol ablative fetishism realism faded military-grade assassin camera. 
                         </span>
                         Silver
@@ -115,10 +121,51 @@ class Packages extends Component{
     }
 }
 class Reviews extends Component{
+        comments = 
+        [
+            {
+                user:'anonymous',
+                comment:'Faded semiotics engine sentient corporation digital voodoo god car savant smart-RAF soul-delay market-ware. Narrative warehouse-ware apophenia bridge neural towards gang Kowloon engine bicycle. Youtube vehicle systema plastic sensory voodoo god artisanal urban free-market pre-industrial grade. Crypto-euro-pop apophenia woman tube silent drugs RAF pistol savant pen lights table. ',
+                date:'21 August 2018'
+            }
+        ]
+
     render(){
         return(
             <div className='tabcontent'>
                 <h2 className='subtitle'>Reviews</h2>
+                <div className='comments'>
+                    <div className='box commentbox'>
+                        <i className="fa fa-user-circle tag is-primary is-large">
+                        </i>
+                        <div style={{"float":"right"}}>
+                            {this.comments[0].user}
+                            <br/>{this.comments[0].date}                            
+                        </div>
+                        <hr/>
+                        <div>{this.comments[0].comment}</div>
+                    </div>
+                    <div className='box commentbox'>
+                        <i className="fa fa-user-circle tag is-danger is-large">
+                        </i>
+                        <div style={{"float":"right"}}>
+                            {this.comments[0].user}
+                            <br/>{this.comments[0].date}                            
+                        </div>
+                        <hr/>
+                        <div>{this.comments[0].comment}</div>
+                    </div>
+                    <div className='box commentbox'>
+                        <i className="fa fa-user-circle tag is-warning is-large">
+                        </i>
+                        <div style={{"float":"right"}}>
+                            {this.comments[0].user}
+                            <br/>{this.comments[0].date}                            
+                        </div>
+                        <hr/>
+                        <div>{this.comments[0].comment}</div>
+                    </div>
+                </div>
             </div>
             )
     }

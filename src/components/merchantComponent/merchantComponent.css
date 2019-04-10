@@ -94,3 +94,14 @@
     padding: 5px;
     transform: translateY(325%)
 }
+
+.comments{
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.commentbox{
+    width:32%;
+    margin-right: 10px;
+    font-size: 0.8em;
+}

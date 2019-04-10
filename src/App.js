@@ -5,6 +5,7 @@ import './app.css'
 
 import Index from './components/indexComponent/indexComponent';
 import List from './components/listComponent/listComponent';
+import Merchant from './components/merchantComponent/merchantComponent';
 import Navbar from './components/navbarComponent/navbarComponent'
 import Footer from './components/footerComponent/footerComponent'
 
@@ -25,6 +26,7 @@ class App extends Component {
         <Navbar options={this.locality_options}/>
         <Route path="/" exact component={Index} />
         <Route path="/list" exact component={List}/>
+        <Route path="/merchant" exact component={Merchant}/>
         <Footer />    
       </Router>
       );

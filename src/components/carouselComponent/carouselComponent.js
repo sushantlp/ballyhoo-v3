@@ -29,7 +29,7 @@ export default class Carousel extends React.Component {
             items={this.state.galleryItems}  
             responsive={{ 1024: {items:1} }}   
             infinite={true}
-            autoPlay={true}
+            autoPlay={false}
             duration={2500}
             />
           </div>

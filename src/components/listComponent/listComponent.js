@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './listComponent.css'
-// import SlideCard from '../slideCardComponent/slideCardComponent'
+
 import Carousel from '../carouselComponent/carouselComponent'
 
 import { Link } from "react-router-dom";
@@ -31,7 +31,7 @@ export default  class List extends Component {
             <div className='listcontainer'>
             <div className='columns'>
                 <div className='column two is-8'>
-                    <section style={{"marginLeft":"10px"}}>
+                    <section style={{"marginLeft":"10px", "marginTop":"30px"}}>
                         <h2 className='subtitle'>Merchant List</h2>
                         <nav class="breadcrumb" aria-label="breadcrumbs">
                           <ul>
@@ -75,7 +75,6 @@ export default  class List extends Component {
                </div>
                 <div className='column three is-3'><br/><br/>
                     <p style={{"fontSize":"0.8em"}}>Kowloon fluidity math--ware human-space semiotics tanto pistol corporation bicycle grenade realism camera hotdog.<br/><br/></p>
-                    {/*<SlideCard img='http://bit.ly/2FAH4Tn' width={265} alt='alt'/><br/>*/}
                     <img src='http://bit.ly/2FAhVbn' alt='alt'/>
                     <p>Similar Title</p>
                     <p style={{"fontSize":"0.8em"}}>Offer Title<br/></p>
@@ -88,6 +87,7 @@ export default  class List extends Component {
                 </div>
             </div>
             <Carousel items={this.featured_items} style list txt='Stories' className='carousel_container'/>
+            <br/>
         </div>
         );
     }

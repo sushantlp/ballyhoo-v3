@@ -15,6 +15,7 @@
 
 .breadcrumb{
     margin-top: -25px;
+    font-size: 0.8em;
 }
 
 .hashtag{
@@ -38,4 +39,15 @@
 
 .carousel_container{
     margin-left:50px;
+}
+
+
+.mtabs{
+    margin-top:-35px;
+}
+
+
+.d{
+    display: flex;
+    flex-flow: row wrap;
 }

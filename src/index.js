@@ -2,10 +2,11 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './app';
-import { BreakpointProvider } from 'react-socks';
 import * as serviceWorker from './serviceWorker';
 
-ReactDOM.render(<BreakpointProvider><App /></BreakpointProvider>, document.getElementById('root'));
+ReactDOM.render(
+                    <App />
+                    , document.getElementById('root'));
 
 //HOT RELOADING - - DO NOT REMOVE
 //https://medium.com/@brianhan/hot-reloading-cra-without-eject-b54af352c642

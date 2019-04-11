@@ -3,7 +3,7 @@ import { Tab, Tabs, TabList } from 'react-tabs';
 import "react-tabs/style/react-tabs.css";
 import './merchantComponent.css';
 
-class Details extends Component{
+class DetailsTab extends Component{
     render(){
         const style = {
           backgroundImage: "url("+this.props.image+")",
@@ -21,13 +21,11 @@ class Details extends Component{
                 </div>
                 <div className='columns'>
                     <div className='overview column is-3'>
-                        <Popularity pop='57%'/>&nbsp;
+                        <Popularity pop='67%'/>&nbsp;
                         <Rating />&nbsp;
                         <Ftype/>&nbsp;
-                        <div className='tag is-primary'>
-                            <p>
-                                Cuisine: Continental
-                            </p>
+                        <div className='tag is-primary'><p>
+                                Cuisine: Continental</p>
                         </div>&nbsp;
                         <div className='tag is-success'>
                             <p>
@@ -87,7 +85,7 @@ class Rating extends Component{
     }
 }
 
-class Packages extends Component{
+class PackagesTab extends Component{
     render(){
         return(
             <div className='tabcontent'>
@@ -120,17 +118,25 @@ class Packages extends Component{
         )
     }
 }
-class Reviews extends Component{
+class ReviewsTab extends Component{
+    constructor(props){
+        super(props)
+        this.today = new Date()
+    }
+    
         comments = 
         [
             {
                 user:'anonymous',
                 comment:'Faded semiotics engine sentient corporation digital voodoo god car savant smart-RAF soul-delay market-ware. Narrative warehouse-ware apophenia bridge neural towards gang Kowloon engine bicycle. Youtube vehicle systema plastic sensory voodoo god artisanal urban free-market pre-industrial grade. Crypto-euro-pop apophenia woman tube silent drugs RAF pistol savant pen lights table. ',
-                date:'21 August 2018'
+                date:   this.today.getDate()+'/'+
+                        this.today.getMonth()+'/'+
+                        this.today.getFullYear()
             }
         ]
 
     render(){
+
         return(
             <div className='tabcontent'>
                 <h2 className='subtitle'>Reviews</h2>
@@ -175,13 +181,13 @@ class TabSwitch extends Component{
                 switch(this.props.show)
                 {
                     case 'details':
-                        return <Details image={'http://bit.ly/2IbEzdK'}/>
+                        return <DetailsTab image={'http://bit.ly/2IbEzdK'}/>
                     case 'packages':
-                        return <Packages />
+                        return <PackagesTab />
                     case 'reviews':
-                        return <Reviews />
+                        return <ReviewsTab />
                     default:
-                        return <Details />
+                        return <DetailsTab />
                 } 
             }
 }
